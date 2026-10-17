@@ -30,3 +30,17 @@ Telegram Bot (без root и Docker socket) → очищенные снимки 
 GitHub Pages: **Settings → Pages → Deploy from a branch → main / (root) → Save**. Сайт статический, без сборщиков, фреймворков, CDN и сторонней аналитики.
 
 _Independent personal project · © 2026_
+
+
+## Telegram Mini App · v0.5 LIVE (18.10.2026)
+
+В Telegram через меню BotFather запущена **настоящая read-only Mini App**. Четыре экрана подтверждены реальными данными и скриншотами:
+
+- **Обзор** — актуальные статусы процессов, RAM/диск, агрегированная активность VPN и история.
+- **Сервер** — показатели VPS, load average, история RAM за 24 часа и сетевые метрики.
+- **VPN** — AWG 2.0/3.1, окно handshake 3/15/60 минут, накопленные RX/TX и список собственных профилей в защищённой панели.
+- **События** — наблюдаемая надёжность четырёх сервисов и внешний watchdog Cronitor.
+
+**Архитектура для публичного описания:** React/TypeScript/Vite frontend + отдельный read-only Python API + HTTPS через outbound ngrok + подписанные Telegram WebApp initData и allowlist. Не публиковать закрытый адрес Mini App, имена клиентов, пароли, IP или другие секреты.
+
+На странице появился раздел [Mini App](https://sergekoroleff.github.io/vps-control-center-showcase/#miniapp), оформленный в прежнем Mission Control стиле. Для него предусмотрены четыре обезличенных снимка по путям `assets/screens/07-miniapp-overview.webp` … `10-miniapp-events.webp`. До размещения файлов сайт отображает аккуратные заполнители вместо битых изображений.
