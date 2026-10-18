@@ -21,3 +21,30 @@
 .miniapp-security{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px;margin-top:25px;color:#7c9dbf;font-size:10px;letter-spacing:.10em;font-weight:750}
 @media(max-width:850px){.miniapp-intro{grid-template-columns:1fr;gap:25px}.miniapp-screens{gap:9px}.miniapp-screens figure{padding:6px}.miniapp-screens figcaption{font-size:8px}}
 @media(max-width:580px){.miniapp-section{padding-top:82px;padding-bottom:70px}.miniapp-intro{padding:23px}.miniapp-features{gap:9px}.miniapp-features>div{padding:15px;min-height:115px}.miniapp-features strong{font-size:16px}.miniapp-screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.miniapp-screens figure{padding:8px}.miniapp-screens figcaption{font-size:9px}}
+
+
+/* Mini App v0.7 — integrated client-manager and handoff gallery */
+.miniapp-features{grid-template-columns:repeat(2,minmax(0,1fr))}
+.miniapp-intro{align-items:start}
+.miniapp-journey{display:flex;align-items:stretch;gap:13px;margin-top:24px}
+.miniapp-journey>div{flex:1;min-width:0;padding:19px 21px;background:linear-gradient(145deg,rgba(32,56,87,.75),rgba(14,27,45,.8));border:1px solid rgba(133,191,246,.18);border-radius:15px}
+.miniapp-journey>div span{font-size:10px;color:#74c8ef;font-weight:800;letter-spacing:.12em}
+.miniapp-journey>div strong{display:block;font-size:14px;margin:5px 0}
+.miniapp-journey>div small{display:block;font-size:11px;color:#9eafc9;line-height:1.5}
+.miniapp-journey>b{display:grid;place-items:center;font-size:19px;font-weight:400;color:#6cb8e5}
+.miniapp-gallery-header{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:44px 0 0}
+.miniapp-gallery-header .eyebrow{margin:0 0 7px}
+.miniapp-gallery-header h3{font-size:27px;margin:0 0 4px;letter-spacing:-.045em}
+.miniapp-gallery-header p:not(.eyebrow){color:#9faec8;font-size:12px;margin:0}
+.miniapp-gallery-count{font-size:10px;letter-spacing:.11em;color:#96bde0;border:1px solid rgba(145,190,235,.18);border-radius:99px;padding:9px 13px;white-space:nowrap}
+.miniapp-screens{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:25px}
+.miniapp-screens figure{padding:12px 12px 16px}
+.miniapp-frame{aspect-ratio: .58}
+.miniapp-frame.image-pending:after{content:"SCREENSHOT PENDING";background:radial-gradient(ellipse at 50% 30%,rgba(90,155,228,.14),transparent 75%);text-align:center;padding:20px}
+.miniapp-screens figcaption{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:3px;margin:13px 4px 0;letter-spacing:normal}
+.miniapp-screens figcaption span{font-size:9px;letter-spacing:.12em;color:#80c5ed}
+.miniapp-screens figcaption strong{font-size:13px;color:#e7f1ff;letter-spacing:0}
+.miniapp-screens figcaption small{font-size:10px;color:#849ebd;font-weight:400;line-height:1.5}
+.miniapp-screenshot-note{max-width:850px;margin:21px auto 0;color:#8198b6;text-align:center;font-size:11px;line-height:1.7}
+@media(max-width:800px){.miniapp-screens{grid-template-columns:repeat(2,minmax(0,1fr))}.miniapp-journey{gap:6px}.miniapp-journey>div{padding:13px}.miniapp-journey>div strong{font-size:12px}}
+@media(max-width:540px){.miniapp-journey{flex-direction:column;gap:6px}.miniapp-journey>b{transform:rotate(90deg)}.miniapp-gallery-header{display:block}.miniapp-gallery-count{display:inline-block;margin-top:14px}.miniapp-screens{gap:10px}.miniapp-screens figure{padding:7px}.miniapp-screens figcaption strong{font-size:11px}.miniapp-screens figcaption small{font-size:9px}}
