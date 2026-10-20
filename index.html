@@ -24,7 +24,7 @@
         <span>VPS <strong>Control Center</strong></span>
       </a>
       <nav class="nav-links" aria-label="Навигация">
-        <a href="#features">Возможности</a><a href="#architecture">Архитектура</a><a href="#miniapp">Mini App</a><a href="#gallery">Интерфейс</a><a href="#security">Безопасность</a>
+        <a href="#features">Возможности</a><a href="#architecture">Архитектура</a><a href="#miniapp">Mini App</a><a href="#smart-alerts">Smart Alerts</a><a href="#gallery">Интерфейс</a><a href="#security">Безопасность</a>
       </nav>
       <a class="nav-github" href="https://github.com/sergekoroleff/vps-control-center-showcase" target="_blank" rel="noopener noreferrer" aria-label="Репозиторий проекта на GitHub">GitHub <span aria-hidden="true">↗</span></a>
     </div>
@@ -102,6 +102,27 @@
       </div>
       <p class="miniapp-screenshot-note">Семь реальных экранов Mini App v0.7. Имена клиентов на изображениях обезличены; QR, приватные ключи и VPN-конфигурации не публикуются.</p>
       <div class="miniapp-security"><span>◈ &nbsp; TELEGRAM SIGNED ACCESS</span><span>◈ &nbsp; ADMIN ALLOWLIST</span><span>◈ &nbsp; ISOLATED VPN WORKER</span><span>◈ &nbsp; NO SECRETS IN WEBVIEW</span></div>
+    </section>
+    <section class="section shell smart-alerts-section" id="smart-alerts" aria-labelledby="smart-alerts-title">
+      <div class="section-heading"><div><p class="eyebrow">08 / PROACTIVE OBSERVABILITY · LIVE 20.10.2026</p><h2 id="smart-alerts-title">Smart Alerts.<br><span class="gradient-text">Замечает проблему до сбоя.</span></h2></div><p>От пассивных графиков — к проактивному контролю. Система отслеживает устойчивый рост потребления памяти отдельных компонентов и сообщает о подозрительных изменениях в Telegram.</p></div>
+      <div class="smart-alerts-layout">
+        <div class="smart-alerts-story">
+          <div class="smart-alerts-live"><span class="live-dot" aria-hidden="true"></span> MEMORY INTELLIGENCE · ACTIVE</div>
+          <h3>11 компонентов.<br>Один спокойный сигнал.</h3>
+          <p>Отдельный мониторинг systemd-служб и Docker-контейнеров анализирует не только общий RAM сервера, но и анонимную память каждого наблюдаемого компонента. Кратковременные колебания не превращаются в поток уведомлений.</p>
+          <div class="smart-alerts-metrics" aria-label="Параметры мониторинга"><div><strong>11</strong><span>компонентов</span><small>7 systemd · 4 Docker</small></div><div><strong>5<span> min</span></strong><span>интервал сбора</span><small>периодические замеры</small></div><div><strong>24<span> h</span></strong><span>история</span><small>локальные наблюдения</small></div></div>
+          <p class="smart-alerts-disclaimer">Сигнал указывает на подозрительный устойчивый рост RAM, а не доказывает утечку памяти. Наблюдаемые сервисы не перезапускаются автоматически.</p>
+        </div>
+        <div class="smart-alerts-console" aria-label="Схематичная демонстрация логики Smart Alerts">
+          <div class="smart-alerts-console-head"><span class="dots"><i></i><i></i><i></i></span><span>SMART MEMORY / DETECTION PIPELINE</span><span class="smart-alerts-console-status">● ACTIVE</span></div>
+          <div class="smart-alerts-rule"><div class="smart-alerts-rule-title"><span>01 / DETECT</span><strong>Устойчивый рост anon RAM</strong></div><div class="smart-alerts-rule-values"><div><strong>≥40 MiB</strong><small>абсолютный рост</small></div><span class="smart-alerts-and">+</span><div><strong>≥20%</strong><small>относительный рост</small></div></div><div class="smart-alerts-rule-foot">Окно наблюдения · 30–60 минут</div></div>
+          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>02 / VERIFY</span><strong>2 последовательные проверки</strong><small>Защита от кратковременных пиков</small></div>
+          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>03 / NOTIFY</span><strong>Уведомление в Telegram</strong><small>Повторные сообщения ограничены · cooldown 6 часов</small></div>
+          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>04 / RECOVER</span><strong>Сообщение о стабилизации</strong><small>После 2 стабильных проверок</small></div>
+          <div class="smart-alerts-console-foot"><span>PROACTIVE · PRIVATE · NON-DISRUPTIVE</span><span>LIVE SYSTEM</span></div>
+        </div>
+      </div>
+      <div class="smart-alerts-evidence"><span>✓ Проверена доставка Telegram</span><span>✓ Alert service: success</span><span>✓ systemd timer: active</span><span>✓ Без остановки VPN</span></div>
     </section>
     <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">04 / PRODUCT IN ACTION</p><h2 id="gallery-title">Настоящий интерфейс.<br><span class="muted-title">Никаких концепт-макетов.</span></h2></div><p>Ниже — скриншоты Telegram-бота; выше расположена отдельная галерея Mini App. Нажми на снимок бота, чтобы рассмотреть его подробнее.</p></div>
       <div class="gallery-grid">
