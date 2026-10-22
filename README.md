@@ -1,6 +1,8 @@
 # VPS Control Center — Public Showcase
 
-**[Посмотреть сайт →](https://sergekoroleff.github.io/vps-control-center-showcase/)**
+**[Посмотреть сайт →](**Custom domain (GitHub Pages):** https://vps-monitor.koroleff.online/
+
+**Original GitHub Pages URL:** https://sergekoroleff.github.io/vps-control-center-showcase/)**
 
 Публичная презентация персонального Telegram-бота для мониторинга собственной VPS-инфраструктуры и управления VPN-клиентами.
 
@@ -79,3 +81,8 @@ _Independent personal project · © 2026_
 **Если скриншотов только четыре:** загрузить сначала `07`–`10`. `11`–`12` останутся аккуратными заполнителями до следующих снимков. Если фотографии исходно JPG/WebP, преобразовать их в PNG настоящим экспортом, а не простым переименованием расширения.
 
 _Секреты и приватные конфигурации никогда не публикуются в public showcase._
+
+
+## Custom domain migration · 22 October 2026
+
+Owner confirmed GitHub Pages DNS checks complete and public showcase opens successfully at https://vps-monitor.koroleff.online/. Custom domain is configured by the `CNAME` file and Cloudflare DNS-only CNAME pointed at `sergekoroleff.github.io`. This is static GitHub Pages hosting, **not** a Cloudflare Tunnel or finance API. No private account data, tokens or production server addresses are published. Original GitHub Pages project URL was preserved as historical reference and may redirect to the new custom domain.
