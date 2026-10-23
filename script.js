@@ -48,3 +48,6 @@
     }
   });
 })();
+/* Multi-server public feature panel */
+const css=document.createElement('link');css.rel='stylesheet';css.href='multiserver-v2.css';document.head.appendChild(css);
+const extra=document.createElement('script');extra.src='multiserver-v2.js';document.head.appendChild(extra);
