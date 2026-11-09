@@ -1,5 +1,10 @@
 # VCC 5.0 — Public Showcase Redesign Plan
 
+> **STATUS UPDATE · 09.11.2026:** The originally planned VCC 5.0 Mini App was subsequently deployed as an authenticated Preview and **accepted by the owner**, with separate Dashboard / 🇺🇸 USA / 🇳🇱 NL and an accepted mobile `FRESH` badge CSS fix. The public showcase redesign is now implemented in a reviewable GitHub branch: new `index.html`, `showcase-v5.css`, `showcase-v5.js`, and bundled US/NL flags. The previous 08.11 text below remains a dated concept; its statements «Mini App not deployed» are **historical**, not current. Real UI screenshots were **not** published; the new page uses explicitly synthetic demos. The Infrastructure Digest and bot menu redesign remain future work.
+
+---
+
+
 **Date:** 8 November 2026  
 **Status:** DESIGN BACKLOG — **not deployed on the public site**  
 **Scope:** public, synthetic, no private host data
