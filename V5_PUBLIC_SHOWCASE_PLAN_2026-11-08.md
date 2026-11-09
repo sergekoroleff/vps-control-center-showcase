@@ -1,3 +1,5 @@
+> **CURRENT UPDATE · 09.11.2026:** first real Digest 2.0 received and ledger `SENT=1`; authenticated Telegram V5 now includes Cronitor External Health for US/NL, with a separate two-minute collector, safe API and freshness/NO_DATA; permanent Telegram Menu points to `/v5` and V4 remains at `/`. Public showcase updated with a synthetic external-health section and standalone release note. Next work: **buttons inside the Telegram bot**. Older 'delivery pending' text below is historical.
+
 > **UPDATED STATUS · 09.11.2026:** V5 Mini App Preview and public showcase are accepted/published. The evening **Infrastructure Daily Digest 2.0** production sender was switched into the **existing 21:00 MSK service timer** at 19:11 MSK; first live Telegram delivery is pending post-21:05 verification. A public static `DEMO DATA` Digest card is now part of the showcase. All website headlines omit trailing periods. The Telegram menu redesign remains pending. Earlier future-tense plans below are a dated archive, not the latest operational status.
 
 # VCC 5.0 — Public Showcase Redesign Plan
