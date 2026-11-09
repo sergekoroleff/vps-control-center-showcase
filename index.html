@@ -2,147 +2,169 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="canonical" href="https://vps-monitor.koroleff.online/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070d19">
-  <meta name="description" content="VPS Control Center — мониторинг VPS и Telegram Mini App v0.7: VPN Client Manager, графики 24 часа, Service Reliability и выдача подключений через Telegram-бота.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="VPS Control Center — инфраструктура под контролем">
-  <meta property="og:description" content="Telegram Mini App v0.7: мониторинг VPS, VPN Client Manager, аналитика 24 часа и безопасный переход к QR/.conf в боте.">
-  <meta property="og:url" content="https://vps-monitor.koroleff.online/">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <title>VPS Control Center — вся инфраструктура под контролем</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Koroleff VCC 5.0 Infrastructure Intelligence — приватный мониторинг двух серверов, единая телеметрия и защищённая Telegram Mini App.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://vps-monitor.koroleff.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Koroleff VCC">
+  <meta property="og:title" content="Koroleff VCC 5.0 — Infrastructure Intelligence">
+  <meta property="og:description" content="Два сервера. Одна защищённая панель. Техническая телеметрия, история и наблюдаемая надёжность — прямо в Telegram.">
+  <meta property="og:url" content="https://vps-monitor.koroleff.online/">
+  <title>Koroleff VCC 5.0 — Infrastructure Intelligence</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="showcase-v5.css">
+  <script src="showcase-v5.js" defer></script>
 </head>
 <body>
-  <div class="orb orb--one" aria-hidden="true"></div><div class="orb orb--two" aria-hidden="true"></div>
-  <header class="site-header" id="top">
-    <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="VPS Control Center, на главную">
-        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3 34 9v10c0 9-5.8 14.2-14 18-8.2-3.8-14-9-14-18V9L20 3Z" stroke="currentColor" stroke-width="2.2"/><path d="m12.5 20 5 5 10-11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></svg></span>
-        <span>VPS <strong>Control Center</strong></span>
+  <a class="skip" href="#main">Перейти к содержанию</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Koroleff VCC — наверх">
+        <span class="brand-symbol" aria-hidden="true">K</span>
+        <span class="brand-copy"><strong>KOROLEFF</strong><small>CONTROL CENTER</small></span>
       </a>
-      <nav class="nav-links" aria-label="Навигация">
-        <a href="#features">Возможности</a><a href="#architecture">Архитектура</a><a href="#miniapp">Mini App</a><a href="#smart-alerts">Smart Alerts</a><a href="#gallery">Интерфейс</a><a href="#security">Безопасность</a>
+      <nav class="site-nav" aria-label="Разделы сайта">
+        <a href="#capabilities">Возможности</a>
+        <a href="#experience">Интерфейс</a>
+        <a href="#architecture">Архитектура</a>
+        <a href="#security">Безопасность</a>
       </nav>
-      <a class="nav-github" href="https://github.com/sergekoroleff/vps-control-center-showcase" target="_blank" rel="noopener noreferrer" aria-label="Репозиторий проекта на GitHub">GitHub <span aria-hidden="true">↗</span></a>
+      <a class="github-link" href="https://github.com/sergekoroleff/vps-control-center-showcase" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </header>
-  <main>
-    <section class="hero shell" aria-labelledby="hero-title">
+
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> PERSONAL INFRASTRUCTURE · TELEGRAM NATIVE</p>
-        <h1 id="hero-title">Вся инфраструктура.<br><span class="gradient-text">Один центр управления.</span></h1>
-        <p class="hero-lead">Мониторинг сервера, управление VPN-клиентами, аналитика и контроль сервисов — прямо в Telegram. Без громоздких панелей и лишних действий.</p>
-        <div class="hero-actions"><a href="#features" class="button button--primary">Исследовать возможности <span aria-hidden="true">↗</span></a><a href="#gallery" class="button button--secondary">Посмотреть интерфейс <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-foot"><span>Designed for personal infrastructure</span><span class="hero-foot-separator"></span><span>Private by design</span></div>
+        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> V5.0 / INFRASTRUCTURE INTELLIGENCE</div>
+        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> MINI APP ACCEPTED · 09 NOV 2026</div>
+        <h1 id="hero-title">Два сервера.<br>Один <em>взгляд.</em></h1>
+        <p class="hero-lead">Личная инфраструктура больше не разбросана между терминалами и отчётами. <strong>Koroleff VCC</strong> объединяет мониторинг США и Нидерландов в одной защищённой Telegram Mini App.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">Исследовать интерфейс <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#architecture">Как это устроено <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-foot">
+          <span>PRIVATE BY DESIGN</span><span class="separator-dot" aria-hidden="true"></span>
+          <span>TELEGRAM NATIVE</span><span class="separator-dot" aria-hidden="true"></span>
+          <span>READ-ONLY TELEMETRY</span>
+        </div>
       </div>
-      <div class="hero-visual" aria-label="Концептуальная иллюстрация панели VPS Control Center">
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="dashboard">
-          <div class="dashboard-top"><span class="dots"><i></i><i></i><i></i></span><span>CONTROL CENTER / SYSTEM OVERVIEW</span><span class="dashboard-live"><i></i> LIVE VIEW</span></div>
-          <div class="dashboard-intro"><span class="dash-kicker">INFRASTRUCTURE</span><strong>System overview</strong><small>Единая точка наблюдения</small></div>
-          <div class="dash-status"><span>● &nbsp;VPN Services</span><strong>MONITORING</strong></div>
-          <div class="dash-mini-grid">
-            <div class="mini-panel"><div class="mini-label"><span class="mini-icon">◇</span> AWG 2.0</div><span class="mini-sub">Legacy VPN</span><div class="pulse-chart"><i style="height:30%"></i><i style="height:50%"></i><i style="height:39%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:81%"></i><i style="height:60%"></i><i style="height:90%"></i><i style="height:64%"></i><i style="height:75%"></i></div></div>
-            <div class="mini-panel"><div class="mini-label"><span class="mini-icon">⬡</span> AWG 3.1</div><span class="mini-sub">VPN Clients</span><div class="mini-pill"><i></i> ACTIVE CONTROL</div></div>
+
+      <div class="hero-stage" aria-label="Демонстрационная иллюстрация интерфейса VCC 5.0">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="stage-tag">PRODUCT PREVIEW <span>DEMO DATA</span></div>
+        <div class="app-frame" aria-hidden="true">
+          <div class="app-top"><span class="app-k">K</span><span><small>KOROLEFF CONTROL CENTER</small><strong>Infrastructure Intelligence</strong></span><span class="app-version">V5.0</span></div>
+          <p class="app-kicker">INFRASTRUCTURE OVERVIEW</p>
+          <h2>Dashboard</h2>
+          <p class="app-muted">USA + Netherlands</p>
+          <div class="telemetry-tag">● &nbsp;DEMO · SYNTHETIC SNAPSHOT</div>
+          <div class="mini-server-grid">
+            <article class="mini-server">
+              <div class="mini-server-header"><img src="assets/flags/us.svg" width="33" height="22" alt=""><div><strong>USA</strong><small>Personal Finance</small></div></div>
+              <span class="mini-fresh">FRESH · DEMO</span>
+              <div class="mini-stats"><div><span>CPU</span><strong>8%</strong></div><div><span>RAM</span><strong>42%</strong></div><div><span>Disk</span><strong>36%</strong></div><div><span>Load</span><strong>0.19</strong></div></div>
+            </article>
+            <article class="mini-server">
+              <div class="mini-server-header"><img src="assets/flags/nl.svg" width="33" height="22" alt=""><div><strong>Netherlands</strong><small>VCC & AML Scanner</small></div></div>
+              <span class="mini-fresh">FRESH · DEMO</span>
+              <div class="mini-stats"><div><span>CPU</span><strong>3%</strong></div><div><span>RAM</span><strong>27%</strong></div><div><span>Disk</span><strong>22%</strong></div><div><span>Load</span><strong>0.08</strong></div></div>
+            </article>
           </div>
-          <div class="dash-service-list"><div><span class="icon-dot blue"></span> Telegram Proxy <span class="service-spacer"></span><span class="status-quiet">MONITORED</span></div><div><span class="icon-dot violet"></span> AML Scanner <span class="service-spacer"></span><span class="status-quiet">MONITORED</span></div><div><span class="icon-dot teal"></span> VPS Performance <span class="service-spacer"></span><span class="status-quiet">24H INSIGHTS</span></div></div>
-          <div class="dashboard-bottom">SECURE OPERATIONS <span>● &nbsp;PRIVATE ACCESS</span></div>
+          <div class="app-bottom-nav"><span class="selected">◈ &nbsp;Dashboard</span><span>US</span><span>NL</span></div>
         </div>
-        <div class="floating-chip floating-chip--left"><span>🔐</span><div><strong>VPN Management</strong><small>Create · Rename · Revoke</small></div></div>
-        <div class="floating-chip floating-chip--right"><span>◷</span><div><strong>Daily Report</strong><small>21:00 Moscow</small></div></div>
+        <div class="floating-note floating-note-a"><span class="note-symbol">↗</span><div><strong>Two independent hosts</strong><small>No misleading combined health</small></div></div>
+        <div class="floating-note floating-note-b"><span class="note-symbol lilac">▥</span><div><strong>24-hour history</strong><small>Trends with data-quality labels</small></div></div>
       </div>
     </section>
-    <section class="proof-strip" aria-label="Ключевые направления"><div class="shell proof-grid"><div><strong>04</strong><span>ключевых сервиса</span></div><div><strong>24<span>H</span></strong><span>аналитика VPS</span></div><div><strong>360°</strong><span>управление VPN</span></div><div><strong>21:00</strong><span>ежедневный отчёт · МСК</span></div></div></section>
-    <section class="section shell" id="features" aria-labelledby="features-title"><div class="section-heading"><div><p class="eyebrow">01 / CAPABILITIES</p><h2 id="features-title">Мощные функции.<br><span class="muted-title">Простой интерфейс.</span></h2></div><p>Всё необходимое для контроля собственной инфраструктуры — в одном защищённом боте.</p></div>
-      <div class="features-grid">
-        <article class="feature-card feature-card--large"><span class="feature-icon">▧</span><span class="feature-number">01</span><h3>Обзор инфраструктуры</h3><p>Актуальное состояние VPS, памяти, диска и ключевых компонентов без подключения по SSH.</p><div class="feature-bottom">UNIFIED DASHBOARD <span>↗</span></div></article>
-        <article class="feature-card"><span class="feature-icon">⇄</span><span class="feature-number">02</span><h3>Управление VPN-клиентами</h3><p>Создание, переименование и отзыв доступа через Mini App и бота. QR и .conf выдаются в приватном чате.</p><div class="feature-bottom">AWG 3.1 <span>↗</span></div></article>
-        <article class="feature-card"><span class="feature-icon">▥</span><span class="feature-number">03</span><h3>VPS Performance</h3><p>Тренды и пиковые показатели ресурсов за 24 часа, сетевой обмен и динамика нагрузки.</p><div class="feature-bottom">24-HOUR ANALYTICS <span>↗</span></div></article>
-        <article class="feature-card"><span class="feature-icon">◉</span><span class="feature-number">04</span><h3>Service Reliability</h3><p>История наблюдений, признаки отказов, восстановления, рестарты и время работы сервисов.</p><div class="feature-bottom">OBSERVABILITY <span>↗</span></div></article>
-        <article class="feature-card"><span class="feature-icon">▣</span><span class="feature-number">05</span><h3>Контроль интеграций</h3><p>Статусы AmneziaWG 2.0 и 3.1, MTProto Proxy и AML &amp; KYC Scanner на одном экране.</p><div class="feature-bottom">4 SERVICES <span>↗</span></div></article>
-        <article class="feature-card feature-card--accent"><span class="feature-icon">◷</span><span class="feature-number">06</span><h3>Daily Infrastructure Report</h3><p>Автоматическая сводка к 21:00 МСК: ТОП-5 VPN-клиентов по трафику, ресурсы и надёжность. Расписание настроено.</p><div class="feature-bottom">SCHEDULED · 21:00 MSK <span>↗</span></div></article>
+
+    <section class="signal-strip" aria-label="Ключевые характеристики">
+      <div class="wrap signal-grid">
+        <div><strong>02</strong><span>независимых сервера</span></div>
+        <div><strong>03</strong><span>экрана Mini App</span></div>
+        <div><strong>24<span>H</span></strong><span>история NL</span></div>
+        <div><strong>01</strong><span>защищённая панель</span></div>
       </div>
     </section>
-    <section class="section process-section" id="workflow" aria-labelledby="workflow-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">02 / EXPERIENCE</p><h2 id="workflow-title">От команды<br><span class="muted-title">до результата.</span></h2></div><p>Mini App для мониторинга и управления, Telegram-бот для защищённой выдачи VPN-конфигураций.</p></div>
-      <div class="steps"><div class="step"><span class="step-n">01</span><span class="step-symbol">⌕</span><h3>Выбери раздел</h3><p>Открой нужный экран из главного меню Telegram.</p></div><div class="step"><span class="step-n">02</span><span class="step-symbol">✎</span><h3>Укажи действие</h3><p>Добавь клиента, смени имя, получи подключение или просмотри метрики.</p></div><div class="step"><span class="step-n">03</span><span class="step-symbol">✓</span><h3>Подтверди</h3><p>Операции с VPN выполняются только после явного подтверждения.</p></div><div class="step"><span class="step-n">04</span><span class="step-symbol">↗</span><h3>Получай результат</h3><p>Актуальный статус, готовый QR-код или отчёт в личном чате.</p></div></div>
-    </div></section>
-    <section class="section shell" id="architecture" aria-labelledby="architecture-title"><div class="section-heading"><div><p class="eyebrow">03 / ARCHITECTURE</p><h2 id="architecture-title">Security first.<br><span class="muted-title">Система по слоям.</span></h2></div><p>Бот взаимодействует с инфраструктурой через ограниченные интерфейсы. Привилегии управления отделены от Telegram-процесса.</p></div>
-      <div class="architecture"><div class="architecture-primary"><div class="arch-node arch-entry"><span class="arch-badge">01 · ACCESS</span><span class="arch-emoji">✈</span><strong>Telegram</strong><small>Личный чат · разрешённые пользователи</small></div><span class="arch-arrow">↓</span><div class="arch-node"><span class="arch-badge">02 · CONTROL PLANE</span><span class="arch-emoji">◈</span><strong>VPS Control Center Bot</strong><small>Непривилегированный процесс · интерфейс и подтверждения</small></div><span class="arch-arrow">↓</span><div class="arch-split"><div class="arch-node"><span class="arch-badge">03 · READ PATH</span><span class="arch-emoji">▤</span><strong>Sanitized snapshots</strong><small>Очищенные метрики и список клиентов</small></div><div class="arch-node"><span class="arch-badge">03 · WRITE PATH</span><span class="arch-emoji">▱</span><strong>Request queue</strong><small>Строго определённые заявки</small></div></div><span class="arch-arrow">↓</span><div class="arch-node arch-privileged"><span class="arch-badge">04 · ISOLATED EXECUTION</span><span class="arch-emoji">⚙</span><strong>Collector &amp; Operations Worker</strong><small>Отдельные системные службы с ограниченной логикой</small></div></div><div class="architecture-targets"><div class="arch-target"><span class="arch-target-icon">◈</span><span><strong>AmneziaWG 2.0</strong><small>Наблюдение · legacy</small></span></div><div class="arch-target"><span class="arch-target-icon">⬡</span><span><strong>AmneziaWG 3.1</strong><small>Наблюдение · управление клиентами</small></span></div><div class="arch-target"><span class="arch-target-icon">✈</span><span><strong>MTProto Proxy</strong><small>Мониторинг состояния</small></span></div><div class="arch-target"><span class="arch-target-icon">⌘</span><span><strong>AML &amp; KYC Scanner</strong><small>Мониторинг сервиса</small></span></div><div class="arch-target arch-target--note"><span class="arch-target-icon">⏱</span><span><strong>systemd timers</strong><small>Сбор данных · отчёты</small></span></div></div></div>
-      <p class="arch-note">Схема отражает логическое разделение ролей и намеренно не содержит IP-адресов, портов, секретов или деталей доступа.</p>
+
+    <section class="section wrap" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="section-head"><div><p class="eyebrow">01 / WHAT MATTERS</p><h2 id="capabilities-title">Нужные сигналы.<br><span>Никакого шума.</span></h2></div><p>Больше контекста при меньшем количестве действий. Показатели остаются раздельными для каждого хоста, а пробелы в данных не скрываются.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide"><div class="feature-icon">◈</div><span class="feature-id">01</span><h3>Unified Dashboard</h3><p>Текущая картина двух серверов: ресурсы, статусы сервисов и возраст телеметрии — без ложного общего «всё зелёное».</p><span class="feature-tail">USA + NETHERLANDS</span></article>
+        <article class="feature-card"><div class="feature-icon purple">⌁</div><span class="feature-id">02</span><h3>Performance history</h3><p>Почасовые тренды CPU, RAM, диска, нагрузки и сетевого обмена для NL.</p><span class="feature-tail">24-HOUR WINDOW</span></article>
+        <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>Наблюдаемые состояния сервисов с честной маркировкой отсутствующих измерений. Не подменяем наблюдения показателем SLA.</p><span class="feature-tail">QUALITY AWARE</span></article>
+        <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API. Техническая телеметрия отделена от пользовательских финансовых данных.</p><span class="feature-tail">ACCESS CONTROL</span></article>
+      </div>
     </section>
-    <section class="section shell miniapp-section" id="miniapp" aria-labelledby="miniapp-title">
-      <div class="section-heading"><div><p class="eyebrow">07 / TELEGRAM MINI APP · VERSION 0.7</p><h2 id="miniapp-title">Mission Control.<br><span class="gradient-text">Полноценная панель в Telegram.</span></h2></div><p>От наблюдения за инфраструктурой до управления AWG 3.1 — в одном мобильном интерфейсе. Действующая версия v0.7 проверена владельцем проекта.</p></div>
-      <div class="miniapp-intro">
-        <div><span class="miniapp-live">● LIVE · v0.7</span><h3>Одна панель.<br>Мониторинг и управление.</h3>
-          <p>Mini App открывается внутри Telegram. Четыре рабочих раздела показывают реальные, очищенные показатели VPS и сервисов. Встроенный VPN Client Manager позволяет создавать, переименовывать и удалять профили AWG 3.1 с подтверждением действий.</p>
-          <p class="miniapp-note">Для получения подключения приложение открывает карточку выбранного клиента в приватном Telegram-боте. QR и .conf не проходят через веб-приложение.</p>
+
+    <section class="section demo-section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-head"><div><p class="eyebrow">02 / PRODUCT EXPERIENCE</p><h2 id="experience-title">Три экрана.<br><span>Один язык данных.</span></h2></div><p>Интерактивная иллюстрация принятого V5. Все числа ниже синтетические и намеренно не подключены к настоящим серверам.</p></div>
+        <div class="demo-shell">
+          <div class="demo-topline"><div><span class="demo-mark">K</span><span class="demo-brand"><small>KOROLEFF CONTROL CENTER</small><strong>Infrastructure Intelligence</strong></span></div><span class="demo-badge">STATIC DEMO · NOT LIVE</span></div>
+          <div class="demo-tabs" role="tablist" aria-label="Демонстрационные разделы Mini App">
+            <button id="tab-dashboard" role="tab" aria-selected="true" aria-controls="panel-dashboard" tabindex="0" data-tab="dashboard"><span aria-hidden="true">◈</span> Dashboard</button>
+            <button id="tab-us" role="tab" aria-selected="false" aria-controls="panel-us" tabindex="-1" data-tab="us"><img src="assets/flags/us.svg" width="22" height="15" alt=""> USA</button>
+            <button id="tab-nl" role="tab" aria-selected="false" aria-controls="panel-nl" tabindex="-1" data-tab="nl"><img src="assets/flags/nl.svg" width="22" height="15" alt=""> Netherlands</button>
+          </div>
+
+          <section id="panel-dashboard" class="demo-panel" role="tabpanel" aria-labelledby="tab-dashboard" tabindex="0">
+            <div class="demo-heading"><div><p class="app-kicker">INFRASTRUCTURE OVERVIEW</p><h3>Dashboard</h3><p>Separate signals. Shared visibility.</p></div><span class="quality-tag">DEMO SNAPSHOT</span></div>
+            <div class="demo-host-grid">
+              <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/us.svg" width="38" height="25" alt=""><span><strong>USA</strong><small>Personal Finance</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>8%</strong></div><div><small>RAM</small><strong>42%</strong></div><div><small>Disk</small><strong>36%</strong></div><div><small>Load 1m</small><strong>0.19</strong></div></div><p class="host-caption">3 services · 3 scheduled timers</p></article>
+              <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/nl.svg" width="38" height="25" alt=""><span><strong>Netherlands</strong><small>VCC & AML Scanner</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load 1m</small><strong>0.08</strong></div></div><p class="host-caption">5 monitored services · history available</p></article>
+            </div>
+            <div class="quality-section"><span>Current telemetry <b>DEMO</b></span><span>NL performance <b>DEMO</b></span><span>US history <b class="unavailable">NO_DATA</b></span></div>
+          </section>
+
+          <section id="panel-us" class="demo-panel" role="tabpanel" aria-labelledby="tab-us" tabindex="0" hidden>
+            <div class="demo-heading"><div><p class="app-kicker">HOST DETAIL / US</p><h3><img src="assets/flags/us.svg" width="30" height="20" alt=""> USA</h3><p>Personal Finance production · sample resource view</p></div><span class="quality-tag">DEMO SNAPSHOT</span></div>
+            <div class="metric-grid metric-grid-four"><div><small>CPU</small><strong>8%</strong></div><div><small>RAM</small><strong>42%</strong></div><div><small>Disk</small><strong>36%</strong></div><div><small>Load</small><strong>0.19</strong></div></div>
+            <div class="demo-split"><div class="info-panel"><h4>Production services <span>3</span></h4><div class="service-line">Finance API <span>DEMO · ACTIVE</span></div><div class="service-line">Finance Bot <span>DEMO · ACTIVE</span></div><div class="service-line">Edge connection <span>DEMO · ACTIVE</span></div></div><div class="info-panel"><h4>Scheduled routines <span>3</span></h4><div class="service-line">Morning briefing <span>CONFIGURED</span></div><div class="service-line">Reminder <span>CONFIGURED</span></div><div class="service-line">Auto close <span>CONFIGURED</span></div></div></div>
+            <p class="note-line">Timer configured ≠ successful job. История US: <strong>NO_DATA</strong> до внедрения отдельного сбора.</p>
+          </section>
+
+          <section id="panel-nl" class="demo-panel" role="tabpanel" aria-labelledby="tab-nl" tabindex="0" hidden>
+            <div class="demo-heading"><div><p class="app-kicker">HOST DETAIL / NL</p><h3><img src="assets/flags/nl.svg" width="30" height="20" alt=""> Netherlands</h3><p>Monitoring hub · illustrative hourly trend</p></div><span class="quality-tag">DEMO DATA</span></div>
+            <div class="metric-grid metric-grid-four"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load</small><strong>0.08</strong></div></div>
+            <div class="demo-split"><div class="info-panel"><h4>CPU · 24 hours <span>DEMO</span></h4><svg class="trend" role="img" aria-label="Демонстрационный график CPU, не реальные данные" viewBox="0 0 580 135"><path d="M0 112H580M0 70H580M0 28H580" stroke="#303647" fill="none"/><polyline points="5,94 32,83 57,94 84,90 109,62 138,84 165,75 192,86 219,66 244,72 271,88 297,56 323,78 350,49 378,70 405,43 433,58 458,70 486,45 514,64 542,48 575,59" fill="none" stroke="#fe7c32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><small class="chart-caption">Illustrative trend · 24 hourly buckets</small></div><div class="info-panel"><h4>Observability <span>5 SERVICES</span></h4><div class="service-line">Control Center <span>DEMO · ACTIVE</span></div><div class="service-line">Monitoring API <span>DEMO · ACTIVE</span></div><div class="service-line">AML Scanner <span>DEMO · ACTIVE</span></div><div class="service-line">Scanner Mini App <span>DEMO · ACTIVE</span></div><div class="service-line">Edge connection <span>DEMO · ACTIVE</span></div></div></div>
+            <p class="note-line">Anon memory: доступны не все серии. Пропущенные измерения помечаются <strong>NO_DATA</strong>.</p>
+          </section>
         </div>
-        <div class="miniapp-features">
-          <div><span>01 / OVERVIEW</span><strong>Обзор</strong><small>Состояние служб, RAM, диск, VPN</small></div>
-          <div><span>02 / PERFORMANCE</span><strong>Сервер</strong><small>Ресурсы, сеть и история за 24 часа</small></div>
-          <div><span>03 / VPN ANALYTICS</span><strong>VPN</strong><small>AWG 2.0/3.1, handshake 3/15/60, RX/TX</small></div>
-          <div><span>04 / RELIABILITY</span><strong>События</strong><small>Наблюдения, рестарты и время работы</small></div>
-          <div><span>05 / CLIENT MANAGER</span><strong>Клиенты</strong><small>Создать, переименовать, удалить AWG 3.1</small></div>
-          <div><span>06 / HANDOFF</span><strong>Подключение</strong><small>Переход к QR и .conf через Telegram-бота</small></div>
+        <p class="demo-disclaimer"><strong>DEMO ONLY.</strong> Это автономная статическая демонстрация дизайна и структуры данных. На публичной странице нет live API, реальных ресурсов, финансовой информации и авторизованных Telegram-сессий.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="architecture" aria-labelledby="architecture-title">
+      <div class="section-head"><div><p class="eyebrow">03 / UNDER THE HOOD</p><h2 id="architecture-title">Измерять.<br><span>Проверять. Показывать.</span></h2></div><p>Система разделяет сбор, защищённую передачу и представление данных. Публичная схема намеренно не содержит приватных сетевых деталей.</p></div>
+      <div class="flow-grid" role="list" aria-label="Логическая схема обработки">
+        <div class="flow-card" role="listitem"><span class="flow-index">01 / SOURCE</span><img src="assets/flags/us.svg" width="36" height="24" alt=""><h3>USA</h3><p>Локальные технические измерения и статусы production-сервисов.</p></div>
+        <div class="flow-card" role="listitem"><span class="flow-index">02 / TRANSPORT</span><span class="flow-glyph">⌁</span><h3>Signed telemetry</h3><p>Защищённая передача с проверкой целостности и свежести.</p></div>
+        <div class="flow-card" role="listitem"><span class="flow-index">03 / AGGREGATION</span><img src="assets/flags/nl.svg" width="36" height="24" alt=""><h3>Netherlands</h3><p>Независимые snapshots, история и единая модель чтения.</p></div>
+        <div class="flow-card" role="listitem"><span class="flow-index">04 / EXPERIENCE</span><span class="flow-glyph">◈</span><h3>Telegram Mini App</h3><p>Только очищенные технические сведения после проверки доступа.</p></div>
+      </div>
+    </section>
+
+    <section class="section security-section" id="security" aria-labelledby="security-title">
+      <div class="wrap security-layout">
+        <div><p class="eyebrow">04 / TRUST THE SIGNAL</p><h2 id="security-title">Достоверность<br><span>важнее декораций.</span></h2><p>Koroleff VCC — персональный инженерный проект. Подход к безопасности и качеству данных важнее эффектных, но вводящих в заблуждение дашбордов.</p><a href="https://github.com/sergekoroleff/vps-control-center-showcase" class="text-link" target="_blank" rel="noopener noreferrer">Публичный репозиторий проекта <span aria-hidden="true">↗</span></a></div>
+        <div class="principles">
+          <div><span class="principle-n">01</span><div><strong>Технические данные отдельно от личных</strong><p>В мониторинге нет пользовательских финансовых записей и секретов приложений.</p></div></div>
+          <div><span class="principle-n">02</span><div><strong>Freshness ≠ Health</strong><p>Свежий snapshot не гарантирует, что все сервисы здоровы или задания завершились успешно.</p></div></div>
+          <div><span class="principle-n">03</span><div><strong>NO_DATA — тоже результат</strong><p>Отсутствующие измерения не подменяются нулями и не превращаются в фальшивую стабильность.</p></div></div>
+          <div><span class="principle-n">04</span><div><strong>Access controlled</strong><p>Рабочая Mini App использует проверку Telegram-авторизации; эта публичная страница — только демо.</p></div></div>
         </div>
       </div>
-      <div class="miniapp-journey" aria-label="Как получить VPN-подключение"><div><span>01</span><strong>Выбрать клиента</strong><small>Вкладка VPN · Mini App</small></div><b aria-hidden="true">→</b><div><span>02</span><strong>Открыть в Telegram</strong><small>Карточка конкретного профиля</small></div><b aria-hidden="true">→</b><div><span>03</span><strong>Получить QR / .conf</strong><small>В личном чате с ботом</small></div></div>
-      <div class="miniapp-gallery-header"><div><p class="eyebrow">REAL PRODUCT SCREENS</p><h3>Семь экранов Mini App</h3><p>Обзор, Сервер, VPN, События, управление клиентами, Telegram Handoff и создание нового профиля.</p></div><span class="miniapp-gallery-count">7 экранов · v0.7</span></div>
-      <div class="miniapp-screens">
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="07-miniapp-overview.png"><img loading="lazy" decoding="async" src="assets/screens/07-miniapp-overview.png" alt="Состояние инфраструктуры: Обзор сервисов, RAM, диска и VPN" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>01 / ОБЗОР</span><strong>Состояние инфраструктуры</strong><small>Обзор сервисов, RAM, диска и VPN</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="08-miniapp-server.png"><img loading="lazy" decoding="async" src="assets/screens/08-miniapp-server.png" alt="Ресурсы и история: Показатели и 24-часовые тренды" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>02 / СЕРВЕР</span><strong>Ресурсы и история</strong><small>Показатели и 24-часовые тренды</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="09-miniapp-vpn.png"><img loading="lazy" decoding="async" src="assets/screens/09-miniapp-vpn.png" alt="VPN Analytics: AWG 2.0/3.1, handshake и трафик" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>03 / VPN</span><strong>VPN Analytics</strong><small>AWG 2.0/3.1, handshake и трафик</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="10-miniapp-events.png"><img loading="lazy" decoding="async" src="assets/screens/10-miniapp-events.png" alt="Надёжность: История наблюдений и перезапуски" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>04 / СОБЫТИЯ</span><strong>Надёжность</strong><small>История наблюдений и перезапуски</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="11-miniapp-clients.png"><img loading="lazy" decoding="async" src="assets/screens/11-miniapp-clients.png" alt="VPN Client Manager: Создание, переименование и удаление" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>05 / КЛИЕНТЫ</span><strong>VPN Client Manager</strong><small>Создание, переименование и удаление</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="12-miniapp-handoff.png"><img loading="lazy" decoding="async" src="assets/screens/12-miniapp-handoff.png" alt="Telegram Handoff: Переход к выдаче QR / .conf в боте" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>06 / ПОДКЛЮЧЕНИЕ</span><strong>Telegram Handoff</strong><small>Переход к выдаче QR / .conf в боте</small></figcaption></figure>
-    <figure class="miniapp-shot"><div class="miniapp-frame image-pending" data-shot="13-miniapp-add-client.png"><img loading="lazy" decoding="async" src="13-miniapp-add-client.png" alt="Mini App: создание нового VPN-клиента AWG 3.1" onload="this.parentNode.classList.remove('image-pending')" onerror="this.style.display='none';this.parentNode.classList.add('image-pending')"></div><figcaption><span>07 / СОЗДАНИЕ КЛИЕНТА</span><strong>Добавление VPN-профиля</strong><small>Новый клиент прямо в Mini App</small></figcaption></figure>
-      </div>
-      <p class="miniapp-screenshot-note">Семь реальных экранов Mini App v0.7. Имена клиентов на изображениях обезличены; QR, приватные ключи и VPN-конфигурации не публикуются.</p>
-      <div class="miniapp-security"><span>◈ &nbsp; TELEGRAM SIGNED ACCESS</span><span>◈ &nbsp; ADMIN ALLOWLIST</span><span>◈ &nbsp; ISOLATED VPN WORKER</span><span>◈ &nbsp; NO SECRETS IN WEBVIEW</span></div>
     </section>
-    <section class="section shell smart-alerts-section" id="smart-alerts" aria-labelledby="smart-alerts-title">
-      <div class="section-heading"><div><p class="eyebrow">08 / PROACTIVE OBSERVABILITY · LIVE 20.10.2026</p><h2 id="smart-alerts-title">Smart Alerts.<br><span class="gradient-text">Замечает проблему до сбоя.</span></h2></div><p>От пассивных графиков — к проактивному контролю. Система отслеживает устойчивый рост потребления памяти отдельных компонентов и сообщает о подозрительных изменениях в Telegram.</p></div>
-      <div class="smart-alerts-layout">
-        <div class="smart-alerts-story">
-          <div class="smart-alerts-live"><span class="live-dot" aria-hidden="true"></span> MEMORY INTELLIGENCE · ACTIVE</div>
-          <h3>11 компонентов.<br>Один спокойный сигнал.</h3>
-          <p>Отдельный мониторинг systemd-служб и Docker-контейнеров анализирует не только общий RAM сервера, но и анонимную память каждого наблюдаемого компонента. Кратковременные колебания не превращаются в поток уведомлений.</p>
-          <div class="smart-alerts-metrics" aria-label="Параметры мониторинга"><div><strong>11</strong><span>компонентов</span><small>7 systemd · 4 Docker</small></div><div><strong>5<span> min</span></strong><span>интервал сбора</span><small>периодические замеры</small></div><div><strong>24<span> h</span></strong><span>история</span><small>локальные наблюдения</small></div></div>
-          <p class="smart-alerts-disclaimer">Сигнал указывает на подозрительный устойчивый рост RAM, а не доказывает утечку памяти. Наблюдаемые сервисы не перезапускаются автоматически.</p>
-        </div>
-        <div class="smart-alerts-console" aria-label="Схематичная демонстрация логики Smart Alerts">
-          <div class="smart-alerts-console-head"><span class="dots"><i></i><i></i><i></i></span><span>SMART MEMORY / DETECTION PIPELINE</span><span class="smart-alerts-console-status">● ACTIVE</span></div>
-          <div class="smart-alerts-rule"><div class="smart-alerts-rule-title"><span>01 / DETECT</span><strong>Устойчивый рост anon RAM</strong></div><div class="smart-alerts-rule-values"><div><strong>≥40 MiB</strong><small>абсолютный рост</small></div><span class="smart-alerts-and">+</span><div><strong>≥20%</strong><small>относительный рост</small></div></div><div class="smart-alerts-rule-foot">Окно наблюдения · 30–60 минут</div></div>
-          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>02 / VERIFY</span><strong>2 последовательные проверки</strong><small>Защита от кратковременных пиков</small></div>
-          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>03 / NOTIFY</span><strong>Уведомление в Telegram</strong><small>Повторные сообщения ограничены · cooldown 6 часов</small></div>
-          <div class="smart-alerts-rule smart-alerts-rule--secondary"><span>04 / RECOVER</span><strong>Сообщение о стабилизации</strong><small>После 2 стабильных проверок</small></div>
-          <div class="smart-alerts-console-foot"><span>PROACTIVE · PRIVATE · NON-DISRUPTIVE</span><span>LIVE SYSTEM</span></div>
-        </div>
-      </div>
-      <div class="smart-alerts-evidence"><span>✓ Проверена доставка Telegram</span><span>✓ Alert service: success</span><span>✓ systemd timer: active</span><span>✓ Без остановки VPN</span></div>
+
+    <section class="closing wrap" aria-labelledby="closing-title">
+      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность.<br><em>Потом автоматизация.</em></h2><p>V5 Mini App принята. Следующий этап развития проекта — более содержательный Infrastructure Digest и актуальное меню Telegram-бота.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
-    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title"><div class="shell"><div class="section-heading"><div><p class="eyebrow">04 / PRODUCT IN ACTION</p><h2 id="gallery-title">Настоящий интерфейс.<br><span class="muted-title">Никаких концепт-макетов.</span></h2></div><p>Ниже — скриншоты Telegram-бота; выше расположена отдельная галерея Mini App. Нажми на снимок бота, чтобы рассмотреть его подробнее.</p></div>
-      <div class="gallery-grid">
-        <button class="gallery-card gallery-card--cover" type="button" data-gallery="0" aria-label="Открыть скриншот: приветственный экран"><div class="gallery-image"><img src="assets/screens/01-welcome.webp" loading="lazy" alt="Приветственный экран VPS Control Center в Telegram"></div><div class="gallery-desc"><span>01 / WELCOME</span><strong>Первое знакомство</strong><small>Возможности бота и вход в интерфейс</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-        <button class="gallery-card" type="button" data-gallery="1" aria-label="Открыть скриншот: описание бота"><div class="gallery-image"><img src="assets/screens/02-about.webp" loading="lazy" alt="Telegram-описание и оформление VPS Control Center"></div><div class="gallery-desc"><span>02 / IDENTITY</span><strong>Карточка проекта</strong><small>Описание и визуальная идентичность</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-        <button class="gallery-card" type="button" data-gallery="2" aria-label="Открыть скриншот: главное меню"><div class="gallery-image"><img src="assets/screens/03-menu.webp" loading="lazy" alt="Главное меню VPS Control Center в Telegram"></div><div class="gallery-desc"><span>03 / NAVIGATION</span><strong>Главное меню</strong><small>Быстрый переход ко всем разделам</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-        <button class="gallery-card" type="button" data-gallery="3" aria-label="Открыть скриншот: обзор инфраструктуры"><div class="gallery-image"><img src="assets/screens/04-overview.webp" loading="lazy" alt="Экран обзора инфраструктуры и статусов служб в Telegram"></div><div class="gallery-desc"><span>04 / OVERVIEW</span><strong>Состояние инфраструктуры</strong><small>VPS и ключевые сервисы на одном экране</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-        <button class="gallery-card" type="button" data-gallery="4" aria-label="Открыть скриншот: надёжность сервисов"><div class="gallery-image"><img src="assets/screens/05-reliability.webp" loading="lazy" alt="Экран Service Reliability 24 часа с историей наблюдений"></div><div class="gallery-desc"><span>05 / RELIABILITY</span><strong>Надёжность сервисов</strong><small>Uptime, история измерений и рестарты</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-        <button class="gallery-card" type="button" data-gallery="5" aria-label="Открыть скриншот: статистика VPN"><div class="gallery-image"><img src="assets/screens/06-vpn.webp" loading="lazy" alt="Экран статистики Amnezia VPN 2.0 и 3.1"></div><div class="gallery-desc"><span>06 / VPN ANALYTICS</span><strong>Аналитика VPN</strong><small>Сводные подключения, handshake и трафик</small></div><span class="gallery-open" aria-hidden="true">↗</span></button>
-      </div>
-      <p class="gallery-disclaimer">Иллюстрации показывают реальные экраны приложения на момент съёмки; отдельные показатели и сведения об инфраструктуре могут быть скрыты в публичной версии.</p>
-    </div></section>
-    <section class="section shell" id="security" aria-labelledby="security-title"><div class="section-heading"><div><p class="eyebrow">05 / SECURITY MODEL</p><h2 id="security-title">Контроль без<br><span class="muted-title">лишних привилегий.</span></h2></div><p>Архитектурные решения, которые важнее красивой кнопки управления.</p></div>
-      <div class="security-grid"><div class="security-tile"><span class="security-symbol">01</span><h3>Private access</h3><p>Доступ к управлению ограничен списком Telegram ID и личным чатом администратора.</p></div><div class="security-tile"><span class="security-symbol">02</span><h3>Privilege separation</h3><p>Бот не выполняется под root и не имеет прямого доступа к Docker socket.</p></div><div class="security-tile"><span class="security-symbol">03</span><h3>Explicit confirmation</h3><p>Создание и удаление VPN-профилей требуют подтверждения. Важные операции обрабатывает отдельная служба.</p></div><div class="security-tile"><span class="security-symbol">04</span><h3>Secret-aware delivery</h3><p>QR-код и .conf передаются по запросу с последующей очисткой сообщений. Бот-чаты Telegram не имеют E2E-шифрования.</p></div></div>
-      <div class="security-remark"><span aria-hidden="true">✳</span><p><strong>Принцип проекта:</strong> сервер Mini App проверяет подписанный Telegram initData и права администратора; операции AWG 3.1 проходят через отдельный брокер и Worker. QR и .conf остаются в приватном Telegram-боте, не передаются в WebView. Чаты с ботами не имеют end-to-end шифрования.</p></div>
-    </section>
-    <section class="section report-section" id="report"><div class="shell report-layout"><div><p class="eyebrow">06 / INTELLIGENCE</p><h2>Данные, которые<br><span class="gradient-text">говорят сами за себя.</span></h2><p class="report-copy">Суточная сводка объединяет статистику VPN-клиентов, показатели VPS и состояние сервисов. История строится по изменению счётчиков, а пропуски наблюдений отмечаются отдельно.</p><div class="report-details"><span>◷ &nbsp;Ежедневно в 21:00 МСК</span><span>▤ &nbsp;ТОП-5 по объёму трафика</span><span>✧ &nbsp;Нагрузка, ресурсы и надёжность</span></div></div><div class="report-card"><div class="report-top"><span>✳ DAILY INFRASTRUCTURE REPORT</span><span class="report-dot"></span></div><h3>День под контролем.</h3><span class="report-period">Пример состава отчёта · без реальных значений</span><div class="report-placeholder"><span>ТОП-5 VPN-клиентов</span><div class="placeholder-row"><i style="width:82%"></i><b></b></div><div class="placeholder-row"><i style="width:58%"></i><b></b></div><div class="placeholder-row"><i style="width:44%"></i><b></b></div><div class="placeholder-row"><i style="width:30%"></i><b></b></div><div class="placeholder-row"><i style="width:19%"></i><b></b></div></div><div class="report-summary"><div>Общий трафик<strong>↓ / ↑</strong></div><div>Пиковая нагрузка<strong>CPU · RAM</strong></div><div>Надёжность<strong>STATUS</strong></div></div><div class="report-footer">AUTOMATION CONFIGURED <span>21:00 / MSK</span></div></div></div></section>
-    <section class="section shell final-cta" id="next"><div class="final-cta-inner"><div><p class="eyebrow">BUILT TO EVOLVE</p><h2>Сегодня — контроль.<br><span class="gradient-text">Завтра — ещё больше.</span></h2><p>Основа готова: наблюдаемость, операции с VPN и плановые отчёты. Внешний мониторинг Cronitor и Telegram Mini App уже работают. Дальнейшие направления — улучшение адаптивности, уведомлений и более глубокая аналитика.</p><a class="button button--primary" href="https://github.com/sergekoroleff/vps-control-center-showcase" target="_blank" rel="noopener noreferrer">Проект на GitHub <span aria-hidden="true">↗</span></a></div><span class="cta-decor" aria-hidden="true">◈</span></div></section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">◈</span><span>VPS <strong>Control Center</strong></span></a><p>Private infrastructure. Thoughtful control.</p><a href="#top" class="back-to-top">Наверх ↑</a></div><div class="shell footer-bottom"><span>© 2026 VPS Control Center</span><span>Independent personal project · Showcase only</span></div></footer>
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр скриншота" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Закрыть галерею">×</button><button class="lightbox-prev" type="button" aria-label="Предыдущий скриншот">‹</button><figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure><button class="lightbox-next" type="button" aria-label="Следующий скриншот">›</button></div>
-</body></html>
+  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.0 / INFRASTRUCTURE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>
+</body>
+</html>
