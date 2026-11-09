@@ -1,5 +1,22 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT STATUS · 09.11.2026 — VCC 5.0 Infrastructure Intelligence Showcase
+
+**Public site:** https://vps-monitor.koroleff.online/ · **Design:** Koroleff Dark (graphite, orange, lilac, lime).
+
+**Product status:** Two-host signed telemetry and authenticated VCC 5.0 Telegram Mini App **have been accepted by the owner** (09.11.2026). V5 Preview has exactly **Dashboard / 🇺🇸 USA / 🇳🇱 Netherlands**. Old V4 remains the app's primary root route, V5 opens with the bot's separate `/preview` command; digest and old bot menu are next tasks, not redesigned yet.
+
+**Public showcase V5 design:** Replaces the old VPN Client Manager marketing screen with a modern static Infrastructure Intelligence landing page. Includes synthetic two-host preview, keyboard-accessible three-tab demo, conceptual data flow, quality semantics and zero live telemetry. Main HTML imports `showcase-v5.css` and `showcase-v5.js`, plus bundled flag SVGs to avoid emoji rendering differences on desktop. No frameworks, trackers, external fonts, secrets, real server metrics, user finances or API credentials.
+
+**Very important:** The public UI displays **DEMO / SYNTHETIC DATA**, not current CPU/RAM/disk values and **not** a live status monitor. US history is unavailable in the accepted V5. NL has a 24h history window; some process-memory histories have `NO_DATA`. Scheduled Finance timers being active does not prove job success. Icons do not imply operational health.
+
+**Historical archive:** Remaining sections and image assets below document VPN-era VCC releases and are retained for provenance, **not** for describing current V5 capabilities. Do not display old screenshots in the redesigned homepage without explicit archival labeling and a security review.
+
+[Public V5 design and acceptance plan](V5_PUBLIC_SHOWCASE_PLAN_2026-11-08.md) · [Public site](https://vps-monitor.koroleff.online/) · [Source repository](https://github.com/sergekoroleff/vps-control-center-showcase).
+
+---
+
+
 **Сайт:** https://vps-monitor.koroleff.online/  
 **GitHub Pages:** https://sergekoroleff.github.io/vps-control-center-showcase/
 
