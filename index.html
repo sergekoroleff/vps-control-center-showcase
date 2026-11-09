@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Koroleff VCC 5.0 Infrastructure Intelligence — приватный мониторинг двух серверов, единая телеметрия и защищённая Telegram Mini App.">
+  <meta name="description" content="Koroleff VCC 5.0 — защищённая Telegram Mini App с двухсерверной телеметрией, независимым Cronitor External Health и ежедневным Infrastructure Digest 2.0.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://vps-monitor.koroleff.online/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Koroleff VCC">
   <meta property="og:title" content="Koroleff VCC 5.0 — Infrastructure Intelligence">
-  <meta property="og:description" content="Два сервера. Одна защищённая панель. Техническая телеметрия, история и наблюдаемая надёжность — прямо в Telegram.">
+  <meta property="og:description" content="Два сервера и один Dashboard. Защищённая телеметрия, независимый внешний мониторинг Cronitor и вечерний Digest — прямо в Telegram.">
   <meta property="og:url" content="https://vps-monitor.koroleff.online/">
   <title>Koroleff VCC 5.0 — Infrastructure Intelligence</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -29,6 +29,7 @@
       <nav class="site-nav" aria-label="Разделы сайта">
         <a href="#capabilities">Возможности</a>
         <a href="#experience">Интерфейс</a>
+        <a href="#external">Cronitor</a>
         <a href="#digest">Дайджест</a>
         <a href="#architecture">Архитектура</a>
         <a href="#security">Безопасность</a>
@@ -41,7 +42,7 @@
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
         <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> V5.0 / INFRASTRUCTURE INTELLIGENCE</div>
-        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> V5 MINI APP ACCEPTED · DIGEST V2 CUTOVER</div>
+        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> V5 LIVE · CRONITOR CONNECTED · DIGEST ACCEPTED</div>
         <h1 id="hero-title">Два сервера<br>Один <em>взгляд</em></h1>
         <p class="hero-lead">Личная инфраструктура больше не разбросана между терминалами и отчётами. <strong>Koroleff VCC</strong> объединяет мониторинг США и Нидерландов в одной защищённой Telegram Mini App.</p>
         <div class="hero-actions">
@@ -95,7 +96,7 @@
     <section class="section wrap" id="capabilities" aria-labelledby="capabilities-title">
       <div class="section-head"><div><p class="eyebrow">01 / WHAT MATTERS</p><h2 id="capabilities-title">Нужные сигналы<br><span>Никакого шума</span></h2></div><p>Больше контекста при меньшем количестве действий. Показатели остаются раздельными для каждого хоста, а пробелы в данных не скрываются.</p></div>
       <div class="feature-grid">
-        <article class="feature-card feature-wide"><div class="feature-icon">◈</div><span class="feature-id">01</span><h3>Unified Dashboard</h3><p>Текущая картина двух серверов: ресурсы, статусы сервисов и возраст телеметрии — без ложного общего «всё зелёное».</p><span class="feature-tail">USA + NETHERLANDS</span></article>
+        <article class="feature-card feature-wide"><div class="feature-icon">◈</div><span class="feature-id">01</span><h3>Unified Dashboard</h3><p>Текущая картина двух серверов: ресурсы, статусы сервисов, возраст телеметрии и отдельные карточки Cronitor — без ложного общего «всё зелёное».</p><span class="feature-tail">USA + NETHERLANDS</span></article>
         <article class="feature-card"><div class="feature-icon purple">⌁</div><span class="feature-id">02</span><h3>Performance history</h3><p>Почасовые тренды CPU, RAM, диска, нагрузки и сетевого обмена для NL.</p><span class="feature-tail">24-HOUR WINDOW</span></article>
         <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>Наблюдаемые состояния сервисов с честной маркировкой отсутствующих измерений. Не подменяем наблюдения показателем SLA.</p><span class="feature-tail">QUALITY AWARE</span></article>
         <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API. Техническая телеметрия отделена от пользовательских финансовых данных.</p><span class="feature-tail">ACCESS CONTROL</span></article>
@@ -119,21 +120,22 @@
               <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/us.svg" width="38" height="25" alt=""><span><strong>USA</strong><small>Personal Finance</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>8%</strong></div><div><small>RAM</small><strong>42%</strong></div><div><small>Disk</small><strong>36%</strong></div><div><small>Load 1m</small><strong>0.19</strong></div></div><p class="host-caption">3 services · 3 scheduled timers</p></article>
               <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/nl.svg" width="38" height="25" alt=""><span><strong>Netherlands</strong><small>VCC & AML Scanner</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load 1m</small><strong>0.08</strong></div></div><p class="host-caption">5 monitored services · history available</p></article>
             </div>
-            <div class="quality-section"><span>Current telemetry <b>DEMO</b></span><span>NL performance <b>DEMO</b></span><span>US history <b class="unavailable">NO_DATA</b></span></div>
+            <div class="quality-section"><span>Current telemetry <b>DEMO</b></span><span>External health <b>DEMO</b></span><span>US history <b class="unavailable">NO_DATA</b></span></div>
+            <div class="external-inline" aria-label="Синтетический пример карточек Cronitor"><span><b>USA</b> CRONITOR · HEALTHY <em>DEMO</em></span><span><b>Netherlands</b> CRONITOR · HEALTHY <em>DEMO</em></span></div>
           </section>
 
           <section id="panel-us" class="demo-panel" role="tabpanel" aria-labelledby="tab-us" tabindex="0" hidden>
             <div class="demo-heading"><div><p class="app-kicker">HOST DETAIL / US</p><h3><img src="assets/flags/us.svg" width="30" height="20" alt=""> USA</h3><p>Personal Finance production · sample resource view</p></div><span class="quality-tag">DEMO SNAPSHOT</span></div>
             <div class="metric-grid metric-grid-four"><div><small>CPU</small><strong>8%</strong></div><div><small>RAM</small><strong>42%</strong></div><div><small>Disk</small><strong>36%</strong></div><div><small>Load</small><strong>0.19</strong></div></div>
             <div class="demo-split"><div class="info-panel"><h4>Production services <span>3</span></h4><div class="service-line">Finance API <span>DEMO · ACTIVE</span></div><div class="service-line">Finance Bot <span>DEMO · ACTIVE</span></div><div class="service-line">Edge connection <span>DEMO · ACTIVE</span></div></div><div class="info-panel"><h4>Scheduled routines <span>3</span></h4><div class="service-line">Morning briefing <span>CONFIGURED</span></div><div class="service-line">Reminder <span>CONFIGURED</span></div><div class="service-line">Auto close <span>CONFIGURED</span></div></div></div>
-            <p class="note-line">Timer configured ≠ successful job. История US: <strong>NO_DATA</strong> до внедрения отдельного сбора.</p>
+            <p class="note-line">External Health · Cronitor: <strong>HEALTHY · DEMO</strong>. Timer configured ≠ successful job. История US: <strong>NO_DATA</strong> до внедрения отдельного сбора.</p>
           </section>
 
           <section id="panel-nl" class="demo-panel" role="tabpanel" aria-labelledby="tab-nl" tabindex="0" hidden>
             <div class="demo-heading"><div><p class="app-kicker">HOST DETAIL / NL</p><h3><img src="assets/flags/nl.svg" width="30" height="20" alt=""> Netherlands</h3><p>Monitoring hub · illustrative hourly trend</p></div><span class="quality-tag">DEMO DATA</span></div>
             <div class="metric-grid metric-grid-four"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load</small><strong>0.08</strong></div></div>
             <div class="demo-split"><div class="info-panel"><h4>CPU · 24 hours <span>DEMO</span></h4><svg class="trend" role="img" aria-label="Демонстрационный график CPU, не реальные данные" viewBox="0 0 580 135"><path d="M0 112H580M0 70H580M0 28H580" stroke="#303647" fill="none"/><polyline points="5,94 32,83 57,94 84,90 109,62 138,84 165,75 192,86 219,66 244,72 271,88 297,56 323,78 350,49 378,70 405,43 433,58 458,70 486,45 514,64 542,48 575,59" fill="none" stroke="#fe7c32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><small class="chart-caption">Illustrative trend · 24 hourly buckets</small></div><div class="info-panel"><h4>Observability <span>5 SERVICES</span></h4><div class="service-line">Control Center <span>DEMO · ACTIVE</span></div><div class="service-line">Monitoring API <span>DEMO · ACTIVE</span></div><div class="service-line">AML Scanner <span>DEMO · ACTIVE</span></div><div class="service-line">Scanner Mini App <span>DEMO · ACTIVE</span></div><div class="service-line">Edge connection <span>DEMO · ACTIVE</span></div></div></div>
-            <p class="note-line">Anon memory: доступны не все серии. Пропущенные измерения помечаются <strong>NO_DATA</strong>.</p>
+            <p class="note-line">External Health · Cronitor: <strong>HEALTHY · DEMO</strong>. Anon memory: доступны не все серии. Пропущенные измерения помечаются <strong>NO_DATA</strong>.</p>
           </section>
         </div>
         <p class="demo-disclaimer"><strong>DEMO ONLY.</strong> Это автономная статическая демонстрация дизайна и структуры данных. На публичной странице нет live API, реальных ресурсов, финансовой информации и авторизованных Telegram-сессий.</p>
@@ -141,18 +143,57 @@
     </section>
 
 
+
+    <section class="section external-section" id="external" aria-labelledby="external-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 / INDEPENDENT HEALTH SIGNAL</p>
+            <h2 id="external-title">Второй взгляд<br><span>Вне самого сервера</span></h2>
+          </div>
+          <p>VCC 5.0 теперь показывает независимые heartbeat-статусы <strong>Cronitor</strong> рядом с собственной телеметрией. Два источника — два отдельных сигнала. Ниже только статическая иллюстрация, не реальные данные.</p>
+        </div>
+        <div class="external-grid">
+          <article class="external-host">
+            <header class="external-host-head">
+              <div class="external-host-id"><img src="assets/flags/us.svg" width="34" height="23" alt=""><span><strong>USA</strong><small>Personal Finance · Core Health</small></span></div>
+              <span class="external-demo">DEMO DATA</span>
+            </header>
+            <div class="external-health"><span class="external-dot" aria-hidden="true"></span><strong>HEALTHY</strong><span>Illustrative state</span></div>
+            <div class="external-facts"><span>Источник <strong>Cronitor</strong></span><span>Обновление <strong>2 минуты</strong></span></div>
+            <p class="external-caption">В защищённой Mini App доступны состояние монитора, свежесть источника и три последних heartbeat-события</p>
+          </article>
+          <article class="external-host">
+            <header class="external-host-head">
+              <div class="external-host-id"><img src="assets/flags/nl.svg" width="34" height="23" alt=""><span><strong>Netherlands</strong><small>VCC · AML Scanner · Core Health</small></span></div>
+              <span class="external-demo">DEMO DATA</span>
+            </header>
+            <div class="external-health"><span class="external-dot" aria-hidden="true"></span><strong>HEALTHY</strong><span>Illustrative state</span></div>
+            <div class="external-facts"><span>Источник <strong>Cronitor</strong></span><span>Обновление <strong>2 минуты</strong></span></div>
+            <p class="external-caption">Статус внешнего heartbeat не подменяет измерения производительности или результат выполнения заданий</p>
+          </article>
+        </div>
+        <div class="external-principles">
+          <div><span class="external-principle-icon" aria-hidden="true">⌁</span><div><strong>Свежесть ≠ здоровье</strong><p>Свежие данные — не гарантия непрерывной работы хоста</p></div></div>
+          <div><span class="external-principle-icon" aria-hidden="true">◷</span><div><strong>Fail closed</strong><p>Устаревший HEALTHY превращается в NO_DATA, а не остаётся зелёным</p></div></div>
+          <div><span class="external-principle-icon" aria-hidden="true">◇</span><div><strong>Private by design</strong><p>Доступ к живым статусам — только через Telegram-авторизацию</p></div></div>
+        </div>
+        <p class="external-disclaimer"><strong>STATIC DEMO:</strong> зелёные статусы и все подписи на этой странице синтетические. Публичный showcase не обращается к Cronitor, не читает production API и не показывает приватные ссылки мониторинга.</p>
+      </div>
+    </section>
+
     <section class="section digest-section" id="digest" aria-labelledby="digest-title">
       <div class="wrap">
         <div class="section-head">
-          <div><p class="eyebrow">03 / DAILY SIGNAL</p><h2 id="digest-title">Главное за день<br><span>В одном сообщении</span></h2></div>
-          <p>Infrastructure Digest 2.0 объединяет статусы двух серверов, ресурсы и доступную историю NL. Отправитель переключён на существующий вечерний таймер 21:00 МСК; первая реальная доставка ещё ожидает подтверждения.</p>
+          <div><p class="eyebrow">04 / DAILY SIGNAL</p><h2 id="digest-title">Главное за день<br><span>В одном сообщении</span></h2></div>
+          <p>Infrastructure Digest 2.0 объединяет статусы двух серверов, ресурсы и доступную историю NL. Отправитель работает по существующему вечернему таймеру 21:00 МСК. Первая реальная доставка 9 ноября 2026 года подтверждена получением в Telegram и состоянием SENT.</p>
         </div>
         <div class="digest-layout">
           <div class="digest-benefits">
             <div class="digest-point"><span class="digest-point-no">01</span><div><h3>Два независимых хоста</h3><p>🇺🇸 USA и 🇳🇱 Netherlands в одном отчёте, без усреднения состояния инфраструктуры</p></div></div>
             <div class="digest-point"><span class="digest-point-no">02</span><div><h3>Свежесть прежде всего</h3><p>При устаревшей телеметрии показатели помечаются как недоступные, а не выдаются за актуальные</p></div></div>
             <div class="digest-point"><span class="digest-point-no">03</span><div><h3>Контролируемая доставка</h3><p>Проверка двух журналов доставки, защита от дубликатов и консервативная обработка неопределённых ответов Telegram</p></div></div>
-            <p class="digest-disclaimer"><strong>Статус 09.11.2026</strong> · production cutover завершён, подтверждение первого полученного сообщения запланировано после 21:05 МСК</p>
+            <p class="digest-disclaimer"><strong>Статус 09.11.2026</strong> · первая доставка в Telegram в 21:00 МСК подтверждена, контролируемая запись SENT=1</p>
           </div>
           <div class="digest-visual" aria-label="Демонстрационный Infrastructure Digest 2.0 с синтетическими показателями">
             <div class="digest-top"><span class="digest-orbit" aria-hidden="true">◉</span><span><strong>Infrastructure Digest 2.0</strong><small>TELEGRAM · 21:00 MSK</small></span><span class="digest-demo">DEMO DATA</span></div>
@@ -171,14 +212,14 @@ Anon RAM история: 3/5
 
 ✅ По доступным данным отклонений не выявлено
 * Активный таймер ≠ успешное выполнение</pre>
-            <p class="digest-visual-note">Иллюстрация формата · значения полностью синтетические · не является live-мониторингом или подтверждением доставки</p>
+            <p class="digest-visual-note">Иллюстрация формата · значения полностью синтетические · не является live-мониторингом или копией реального сообщения</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section wrap" id="architecture" aria-labelledby="architecture-title">
-      <div class="section-head"><div><p class="eyebrow">04 / UNDER THE HOOD</p><h2 id="architecture-title">Измерять<br><span>Проверять и показывать</span></h2></div><p>Система разделяет сбор, защищённую передачу и представление данных. Публичная схема намеренно не содержит приватных сетевых деталей.</p></div>
+      <div class="section-head"><div><p class="eyebrow">05 / UNDER THE HOOD</p><h2 id="architecture-title">Измерять<br><span>Проверять и показывать</span></h2></div><p>Система разделяет сбор, защищённую передачу и представление данных. Публичная схема намеренно не содержит приватных сетевых деталей.</p></div>
       <div class="flow-grid" role="list" aria-label="Логическая схема обработки">
         <div class="flow-card" role="listitem"><span class="flow-index">01 / SOURCE</span><img src="assets/flags/us.svg" width="36" height="24" alt=""><h3>USA</h3><p>Локальные технические измерения и статусы production-сервисов.</p></div>
         <div class="flow-card" role="listitem"><span class="flow-index">02 / TRANSPORT</span><span class="flow-glyph">⌁</span><h3>Signed telemetry</h3><p>Защищённая передача с проверкой целостности и свежести.</p></div>
@@ -189,7 +230,7 @@ Anon RAM история: 3/5
 
     <section class="section security-section" id="security" aria-labelledby="security-title">
       <div class="wrap security-layout">
-        <div><p class="eyebrow">05 / TRUST THE SIGNAL</p><h2 id="security-title">Достоверность<br><span>важнее декораций</span></h2><p>Koroleff VCC — персональный инженерный проект. Подход к безопасности и качеству данных важнее эффектных, но вводящих в заблуждение дашбордов.</p><a href="https://github.com/sergekoroleff/vps-control-center-showcase" class="text-link" target="_blank" rel="noopener noreferrer">Публичный репозиторий проекта <span aria-hidden="true">↗</span></a></div>
+        <div><p class="eyebrow">06 / TRUST THE SIGNAL</p><h2 id="security-title">Достоверность<br><span>важнее декораций</span></h2><p>Koroleff VCC — персональный инженерный проект. Подход к безопасности и качеству данных важнее эффектных, но вводящих в заблуждение дашбордов.</p><a href="https://github.com/sergekoroleff/vps-control-center-showcase" class="text-link" target="_blank" rel="noopener noreferrer">Публичный репозиторий проекта <span aria-hidden="true">↗</span></a></div>
         <div class="principles">
           <div><span class="principle-n">01</span><div><strong>Технические данные отдельно от личных</strong><p>В мониторинге нет пользовательских финансовых записей и секретов приложений.</p></div></div>
           <div><span class="principle-n">02</span><div><strong>Freshness ≠ Health</strong><p>Свежий snapshot не гарантирует, что все сервисы здоровы или задания завершились успешно.</p></div></div>
@@ -200,7 +241,7 @@ Anon RAM история: 3/5
     </section>
 
     <section class="closing wrap" aria-labelledby="closing-title">
-      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>V5 Mini App принята, а Infrastructure Digest 2.0 переключён на существующий вечерний таймер 21:00 МСК. Первая реальная доставка ожидает отдельной проверки; следующий этап — обновление меню Telegram-бота.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
+      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>V5 Mini App дополнена независимым Cronitor External Health, а первая доставка Digest 2.0 в 21:00 МСК подтверждена. Следующий этап — обновление кнопок и команд внутри Telegram-бота.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.0 / INFRASTRUCTURE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>

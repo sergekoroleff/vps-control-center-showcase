@@ -1,6 +1,21 @@
 # VPS Control Center — Public Showcase
 
-## CURRENT STATUS · 09.11.2026 — VCC 5.0 Mini App + Digest 2.0 cutover
+## CURRENT STATUS · 09.11.2026 — CRONITOR EXTERNAL HEALTH LIVE + DIGEST DELIVERY ACCEPTED
+
+**What is live (owner-confirmed):** VCC 5.0 Telegram Mini App with **Dashboard / 🇺🇸 USA / 🇳🇱 Netherlands**, an independent external health feed from Cronitor for both hosts, a two-minute protected collector, a sanitized read-only API, and an evening Infrastructure Digest 2.0 at **21:00 Moscow time**. The **first live Digest V2 message was received 09.11.2026** and verified as one `SENT` delivery. The Telegram permanent menu now opens V5; V4 at `/` is retained for rollback. Next iteration: buttons **inside** the Telegram bot.
+
+**Showcase disclosure:** everything visual on this public GitHub Pages site is **STATIC DEMO / SYNTHETIC DATA**, including both `HEALTHY` Cronitor badges and the sample Digest. The showcase **never connects to production APIs or Cronitor**, has no real heartbeat history, credentials, private URLs, internal metrics or personal finances. A current screenshot of genuine Cronitor health is intentionally not used.
+
+**External Health design:** independent provider health, source freshness and last three heartbeat events (in the authenticated Mini App); stale or invalid snapshots become **NO_DATA**. A heartbeat is not an uptime SLA and a healthy external monitor is not equivalent to successful Finance jobs. [Read the sanitized public release note](EXTERNAL_HEALTH_SHOWCASE_RELEASE_2026-11-09.md).
+
+**Public site:** https://vps-monitor.koroleff.online/ · **Design:** Koroleff Dark · **Editorial rule:** headings have no trailing full stops.
+
+> Earlier status sections below are dated historical snapshots and may say 'delivery pending'. The current operational state is described above.
+
+---
+
+
+## HISTORICAL STATUS · 09.11.2026 BEFORE FIRST DIGEST DELIVERY (superseded above)
 
 **Digest 2.0:** the production sender was staged and switched into the **existing** `vpscc-daily-report.service` on 09.11.2026 at 19:11 MSK. The existing daily timer remains **21:00 Moscow time**; the first real V2 Telegram delivery and `SENT` ledger verification are **pending after 21:05 MSK**. Do not claim confirmed delivery or daily operation until observed. The legacy generator and its ledger remain available for guarded rollback.
 
