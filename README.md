@@ -1,10 +1,17 @@
 # VPS Control Center — Public Showcase
 
-## CURRENT STATUS · 09.11.2026 — VCC 5.0 Infrastructure Intelligence Showcase
+## CURRENT STATUS · 09.11.2026 — VCC 5.0 Mini App + Digest 2.0 cutover
+
+**Digest 2.0:** the production sender was staged and switched into the **existing** `vpscc-daily-report.service` on 09.11.2026 at 19:11 MSK. The existing daily timer remains **21:00 Moscow time**; the first real V2 Telegram delivery and `SENT` ledger verification are **pending after 21:05 MSK**. Do not claim confirmed delivery or daily operation until observed. The legacy generator and its ledger remain available for guarded rollback.
+
+**Public display:** the new Digest section is an intentionally **synthetic static demonstration**, not a live Telegram message, a runtime status feed or proof of a completed delivery. It illustrates host-separated freshness/resource/service status, NL 24-hour peaks, data gaps, and delivery safeguards at a conceptual level. No production recipient IDs, environment settings, secrets, SQLite paths or raw telemetry are published.
+
+**Editorial standard:** every headline on the public website (including the hero, section titles and feature headlines) omits terminal full stops. Ordinary sentences in paragraphs retain punctuation.
+
 
 **Public site:** https://vps-monitor.koroleff.online/ · **Design:** Koroleff Dark (graphite, orange, lilac, lime).
 
-**Product status:** Two-host signed telemetry and authenticated VCC 5.0 Telegram Mini App **have been accepted by the owner** (09.11.2026). V5 Preview has exactly **Dashboard / 🇺🇸 USA / 🇳🇱 Netherlands**. Old V4 remains the app's primary root route, V5 opens with the bot's separate `/preview` command; digest and old bot menu are next tasks, not redesigned yet.
+**Product status:** Two-host signed telemetry and authenticated VCC 5.0 Telegram Mini App **have been accepted by the owner** (09.11.2026). V5 Preview has exactly **Dashboard / 🇺🇸 USA / 🇳🇱 Netherlands**. Old V4 remains the app's primary root route, V5 opens with the bot's separate `/preview` command; the V2 digest sender is now activated but its first real delivery is not yet verified; the legacy bot menu remains the next separate task.
 
 **Public showcase V5 design:** Replaces the old VPN Client Manager marketing screen with a modern static Infrastructure Intelligence landing page. Includes synthetic two-host preview, keyboard-accessible three-tab demo, conceptual data flow, quality semantics and zero live telemetry. Main HTML imports `showcase-v5.css` and `showcase-v5.js`, plus bundled flag SVGs to avoid emoji rendering differences on desktop. No frameworks, trackers, external fonts, secrets, real server metrics, user finances or API credentials.
 
