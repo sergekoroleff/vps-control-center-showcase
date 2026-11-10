@@ -184,3 +184,41 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 @media(max-width:900px){.external-section{padding-block:75px}.external-grid{gap:12px}.external-host{padding:18px}.external-principles{gap:15px}}
 @media(max-width:690px){.external-grid{grid-template-columns:1fr}.external-principles{grid-template-columns:1fr;gap:18px}.external-host{padding:20px}.external-health>span:last-child{margin-left:0}}
 @media(max-width:370px){.external-host-head{flex-wrap:wrap}.external-inline{grid-template-columns:1fr}}
+
+
+/* Telegram Bot 5.0 P5.3 — STATIC DEMO, no production data or live actions */
+.telegram-section{padding-top:112px;padding-bottom:115px;background:radial-gradient(ellipse at 85% 35%,rgba(254,124,50,.06),transparent 52%),#0e1118;border-top:1px solid rgba(255,255,255,.05)}
+.telegram-layout{display:grid;grid-template-columns:.83fr 1.17fr;gap:64px;align-items:center}
+.telegram-benefit{display:flex;gap:16px;padding:21px 0;border-bottom:1px solid var(--border)}
+.telegram-benefit:first-child{padding-top:0}.telegram-benefit:last-of-type{border-bottom:0}
+.telegram-benefit-icon{flex:0 0 42px;height:42px;display:grid;place-items:center;border-radius:12px;background:rgba(254,124,50,.07);border:1px solid rgba(254,124,50,.26);color:var(--orange);font-size:20px}
+.telegram-benefit h3{font-size:17px;letter-spacing:-.025em;margin:0 0 7px}
+.telegram-benefit p{font-size:12px;line-height:1.85;color:#aab5c4;margin:0}
+.telegram-benefit code,.telegram-privacy code{color:#dec7f4;background:rgba(158,110,198,.09);padding:1px 4px;border-radius:5px;font-size:11px}
+.telegram-privacy{font-size:11px;line-height:1.9;color:#9ba6b6;border-left:2px solid rgba(254,124,50,.7);padding-left:14px;margin:24px 0 0}
+.telegram-privacy strong{color:var(--orange)}
+.telegram-preview{min-width:0;max-width:610px;width:100%;margin-inline:auto;background:linear-gradient(155deg,#1b2231,#121821 80%);border:1px solid #3b4656;border-radius:22px;box-shadow:0 30px 90px rgba(0,0,0,.3);overflow:hidden}
+.telegram-preview-head{display:flex;align-items:center;gap:12px;padding:17px 21px;background:#212a38;border-bottom:1px solid #384253}
+.telegram-avatar{width:38px;height:38px;flex:0 0 38px;display:grid;place-items:center;border-radius:50%;font-weight:900;color:#111318;background:var(--orange)}
+.telegram-preview-head>span:nth-child(2){display:grid;min-width:0;line-height:1.35}
+.telegram-preview-head strong{font-size:13px}
+.telegram-preview-head small{font-size:10px;color:#a1adbd}
+.telegram-preview-label{margin-left:auto;color:var(--lime);font-size:9px;font-weight:850;letter-spacing:.06em;border:1px solid rgba(193,253,14,.28);border-radius:100px;padding:5px 8px;white-space:nowrap}
+.telegram-chat{display:grid;gap:13px;padding:20px;background:radial-gradient(ellipse at 6% 0,rgba(158,110,198,.11),transparent 65%)}
+.telegram-bubble{border:1px solid #424b5d;background:#232c3b;border-radius:15px 15px 15px 5px;padding:17px 17px 14px;min-width:0}
+.telegram-bubble-kicker{font-size:10px;color:#f4c0a3;display:block;margin-bottom:5px;letter-spacing:.035em;font-weight:750}
+.telegram-bubble>strong{display:block;font-size:14px;letter-spacing:-.015em}
+.telegram-bubble>p{font-size:11px;line-height:1.75;color:#c0c9d7;margin:8px 0 13px}
+.telegram-menu-demo{display:grid;gap:6px;margin-top:13px}
+.telegram-menu-demo>div:not(.telegram-menu-pair),.telegram-menu-pair span{display:grid;place-items:center;text-align:center;background:#344252;border:1px solid #46596d;border-radius:9px;min-height:38px;padding:9px 10px;color:#e2efff;font-size:11px;font-weight:800;line-height:1.4}
+.telegram-menu-demo>div:first-child{border-color:#ae7c56;background:#4a352c;color:#ffe0cc}
+.telegram-menu-pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.telegram-bubble-report{max-width:93%;margin-left:auto;border-radius:15px 15px 5px 15px;background:#24342e;border-color:#405d4d}
+.telegram-bubble-report p{font-size:11px;color:#dbe5df;margin:9px 0;line-height:1.7}
+.telegram-bubble-report p strong{color:#d8f9be}
+.telegram-bubble-report small{display:block;color:#a5b5a8;font-size:10px;line-height:1.6;margin-top:9px}
+.telegram-preview-foot{padding:12px 20px;color:#96a2b4;font-size:10px;line-height:1.7;border-top:1px solid #384253;background:#191e28}
+@media(max-width:1050px){.telegram-layout{gap:30px}.telegram-preview-head{padding:14px}.telegram-chat{padding:14px}}
+@media(max-width:930px){.telegram-layout{grid-template-columns:1fr;gap:35px}.telegram-benefits{max-width:710px}.telegram-preview{max-width:640px}}
+@media(max-width:700px){.telegram-section{padding-top:75px;padding-bottom:80px}.telegram-preview{border-radius:16px}}
+@media(max-width:440px){.telegram-preview-head{gap:8px;padding:11px}.telegram-preview-label{font-size:8px;padding:4px 6px}.telegram-avatar{width:31px;height:31px;flex-basis:31px}.telegram-chat{padding:10px}.telegram-bubble{padding:13px}.telegram-preview-head small{font-size:9px}.telegram-menu-demo>div:not(.telegram-menu-pair),.telegram-menu-pair span{font-size:10px;padding:7px 4px}.telegram-bubble-report{max-width:100%}}
