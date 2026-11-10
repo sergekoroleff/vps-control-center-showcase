@@ -1,5 +1,20 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT STATUS · 10.11.2026 — TELEGRAM BOT 5.0 ACCEPTED
+
+**Production owner acceptance:** The VCC Telegram bot now has a redesigned read-only V5 menu. Owner confirmed the rollout script completed without errors and all tested buttons work in Telegram. New menu: **🚀 Открыть Mini App**, **📊 Infrastructure Summary**, **🇺🇸 USA**, **🇳🇱 Netherlands**, **🛡️ Service Health**, **ℹ️ О системе**. Reports include refresh/back; `/app` opens V5 and `/preview` is retained as an alias. Older read-only callbacks are supported; VPN management is disabled.
+
+**Data/UX:** Text reports reuse unified two-host technical telemetry and independent Cronitor external health with `FRESH/STALE/NO_DATA` integrity controls. US reports include the status of Finance services and three scheduled timers; active timer ≠ successful job execution. NL shows VCC/AML/shared-connector services. **US 24-hour historical data are not yet collected**, so future history is explicitly marked `NO_DATA`.
+
+**Public showcase update:** Added a styled **Telegram Bot 5.0** section and a sample text-summary card in Koroleff Dark. The mock Telegram interface, numbers and all health examples are **STATIC DEMO / SYNTHETIC DATA** — not connected to the real bot, Mini App, any Cronitor API or private monitoring data. V5 Mini App, two-host External Health and 21:00 Moscow Digest 2.0 remain the features accepted on 09.11.2026. The website stays static and credential-free.
+
+**Next separate release:** US historical telemetry after schema/storage audit, not delivered as part of Bot P5.3. Historical VPN-era copy below is retained only as archive and does not describe current operations.
+
+**[Telegram Bot V5 public release note](TELEGRAM_BOT_V5_SHOWCASE_RELEASE_2026-11-10.md)** · [Prior Cronitor public release](EXTERNAL_HEALTH_SHOWCASE_RELEASE_2026-11-09.md) · [Public site](https://vps-monitor.koroleff.online/).
+
+---
+
+
 ## CURRENT STATUS · 09.11.2026 — CRONITOR EXTERNAL HEALTH LIVE + DIGEST DELIVERY ACCEPTED
 
 **What is live (owner-confirmed):** VCC 5.0 Telegram Mini App with **Dashboard / 🇺🇸 USA / 🇳🇱 Netherlands**, an independent external health feed from Cronitor for both hosts, a two-minute protected collector, a sanitized read-only API, and an evening Infrastructure Digest 2.0 at **21:00 Moscow time**. The **first live Digest V2 message was received 09.11.2026** and verified as one `SENT` delivery. The Telegram permanent menu now opens V5; V4 at `/` is retained for rollback. Next iteration: buttons **inside** the Telegram bot.
