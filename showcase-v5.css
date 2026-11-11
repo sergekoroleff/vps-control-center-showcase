@@ -222,3 +222,13 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 @media(max-width:930px){.telegram-layout{grid-template-columns:1fr;gap:35px}.telegram-benefits{max-width:710px}.telegram-preview{max-width:640px}}
 @media(max-width:700px){.telegram-section{padding-top:75px;padding-bottom:80px}.telegram-preview{border-radius:16px}}
 @media(max-width:440px){.telegram-preview-head{gap:8px;padding:11px}.telegram-preview-label{font-size:8px;padding:4px 6px}.telegram-avatar{width:31px;height:31px;flex-basis:31px}.telegram-chat{padding:10px}.telegram-bubble{padding:13px}.telegram-preview-head small{font-size:9px}.telegram-menu-demo>div:not(.telegram-menu-pair),.telegram-menu-pair span{font-size:10px;padding:7px 4px}.telegram-bubble-report{max-width:100%}}
+
+/* 11.11.2026 · Synthetic US history preview (never live telemetry) */
+.us-history-demo{margin:16px 0}
+.demo-rail-name{font-size:12px;color:#c5ccd9;margin:0 0 11px}
+.demo-reliability-rail{display:flex;gap:4px;width:100%;height:15px;margin:0 0 12px}
+.demo-reliability-rail span{flex:1;min-width:0;border-radius:3px;background:#717988}
+.demo-reliability-rail span.ok{background:#c1fd0e}
+.demo-reliability-rail span.down{background:#f06d78}
+.demo-reliability-rail span.unknown{background:#717988}
+.demo-rail-note{font-size:11px;color:#a8b4c2;margin:14px 0 0;line-height:1.6}
