@@ -1,5 +1,20 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT SHOWCASE RELEASE · 11.11.2026 — VCC 5.0 US HISTORICAL INTELLIGENCE ACCEPTED
+
+**Owner-accepted production feature:** VCC 5.0 protected Telegram Mini App now displays **real historical US telemetry** alongside NL. Existing Dashboard / USA / Netherlands tabs, separate Cronitor External Health, read-only Telegram authorization and legacy V4 fallback remain. US history includes CPU, derived RAM/Disk utilization, Load, Swap, PSI, cumulative OOM, 3 Finance service-memory charts and observed state/restart/timer timelines. Status/coverage/gaps have explicit quality semantics; rolling 24h refers to the window, not a guarantee of 24 hours already accumulated at release. Owner accepted Chrome 7/7 and real Telegram Mini App rendering; final server check confirmed four active components and unauthenticated API 401.
+
+**Public site updated:** the formerly stale `US history: NO_DATA` descriptions were removed; new USA demo includes a **synthetic CPU trend and synthetic observed-service-state strip**, with a short red failed segment and an unknown segment. Hero, capabilities, quality row and roadmap copy now describe actual US/NL-history *capability* accurately. **Every displayed number, chart, timestamp, health state and trend on the public site is STATIC DEMO / SYNTHETIC DATA**, not production telemetry, not an uptime SLA and not a live connection. The public page contains no sensitive IPs, bot/admin identifiers, real Finance values, secrets or telemetry tokens.
+
+**Still open:** AML & KYC Scanner news digest delivery, Finance new-period Google Sheets end-date automation (API422 on 11.11), Telegram chat-list VCC launcher pointing to V4, improvements to VCC 21:00 MSK Infrastructure Digest. New US 24h history has **not yet been incorporated into the production digest**; do not confuse the two senders.
+
+[**11 November public release details**](US_HISTORY_SHOWCASE_RELEASE_2026-11-11.md) · [Live static showcase](https://vps-monitor.koroleff.online/) · [10 November Telegram bot release](TELEGRAM_BOT_V5_SHOWCASE_RELEASE_2026-11-10.md).
+
+> Historical release notes below are preserved as dated records and may say US history was `NOT_COLLECTED`. Those statements were superseded 11 November 2026. This public showcase is not the production UI and does not call private endpoints.
+
+---
+
+
 ## CURRENT STATUS · 10.11.2026 — TELEGRAM BOT 5.0 ACCEPTED
 
 **Production owner acceptance:** The VCC Telegram bot now has a redesigned read-only V5 menu. Owner confirmed the rollout script completed without errors and all tested buttons work in Telegram. New menu: **🚀 Открыть Mini App**, **📊 Infrastructure Summary**, **🇺🇸 USA**, **🇳🇱 Netherlands**, **🛡️ Service Health**, **ℹ️ О системе**. Reports include refresh/back; `/app` opens V5 and `/preview` is retained as an alias. Older read-only callbacks are supported; VPN management is disabled.
