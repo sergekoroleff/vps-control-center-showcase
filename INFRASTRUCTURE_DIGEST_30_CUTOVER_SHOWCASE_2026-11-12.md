@@ -1,5 +1,12 @@
 # VCC — Infrastructure Digest 3.0 · Public Showcase Update
 
+## Update · 12 November 2026 21:00 MSK — FIRST DELIVERY RECEIVED
+
+The owner **received and verified a real scheduled Infrastructure Digest 3.0 Telegram message** at **21:00 MSK** on 12 November 2026. The message included two-host current status, additional 24-hour CPU intelligence, sampled Netherlands reliability, Cronitor and data quality disclaimers. The previously documented **PENDING** state below was accurate at the time of cutover but has now been **superseded** by this owner-verified delivery evidence.
+
+**Technical result verification still pending:** systemd `Result`/`ExecMainStatus` and SQLite delivery-ledger `SENT` outcome have not been independently confirmed. Do not retry the send. No private screenshot or real operational statistics are published; the showcase remains **STATIC SYNTHETIC DEMO**.
+
+
 **Date:** 12 November 2026  
 **Status:** **Production cutover PASS; first scheduled 3.0 Telegram delivery pending verification**. The existing Digest 2.0 delivery mechanism has previously been confirmed, but **that does not establish a successful V3 message**.
 
