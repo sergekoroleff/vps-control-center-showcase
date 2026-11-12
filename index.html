@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Koroleff VCC 5.0 — защищённая Telegram Mini App с историей US/NL, графиками ресурсов и сервисов, независимым Cronitor, вечерним Infrastructure Digest 2.0 и меню Telegram Bot 5.0.">
+  <meta name="description" content="Koroleff VCC 5.1 — защищённая Telegram Mini App с историей US/NL, почасовой Observed Reliability для Netherlands, графиками ресурсов, независимым Cronitor и вечерним Infrastructure Digest 2.0.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://vps-monitor.koroleff.online/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Koroleff VCC">
-  <meta property="og:title" content="Koroleff VCC 5.0 — Infrastructure Intelligence">
+  <meta property="og:title" content="Koroleff VCC 5.1 — Infrastructure Intelligence">
   <meta property="og:description" content="Два сервера и один Dashboard с историей US/NL. Защищённая телеметрия, Cronitor, вечерний Digest и V5-меню Telegram-бота.">
   <meta property="og:url" content="https://vps-monitor.koroleff.online/">
-  <title>Koroleff VCC 5.0 — Infrastructure Intelligence</title>
+  <title>Koroleff VCC 5.1 — Infrastructure Intelligence</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="showcase-v5.css">
   <script src="showcase-v5.js" defer></script>
@@ -42,8 +42,8 @@
   <main id="main">
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> V5.0 / INFRASTRUCTURE INTELLIGENCE</div>
-        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> V5 LIVE · US + NL HISTORY · CRONITOR CONNECTED</div>
+        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> V5.1 / INFRASTRUCTURE INTELLIGENCE</div>
+        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> V5.1 LIVE · NL OBSERVED RELIABILITY · US HISTORY</div>
         <h1 id="hero-title">Два сервера<br>Один <em>взгляд</em></h1>
         <p class="hero-lead">Личная инфраструктура больше не разбросана между терминалами и отчётами. <strong>Koroleff VCC</strong> объединяет мониторинг США и Нидерландов в одной защищённой Telegram Mini App и быстрых текстовых отчётах V5-бота.</p>
         <div class="hero-actions">
@@ -61,7 +61,7 @@
         <div class="stage-glow" aria-hidden="true"></div>
         <div class="stage-tag">PRODUCT PREVIEW <span>DEMO DATA</span></div>
         <div class="app-frame" aria-hidden="true">
-          <div class="app-top"><span class="app-k">K</span><span><small>KOROLEFF CONTROL CENTER</small><strong>Infrastructure Intelligence</strong></span><span class="app-version">V5.0</span></div>
+          <div class="app-top"><span class="app-k">K</span><span><small>KOROLEFF CONTROL CENTER</small><strong>Infrastructure Intelligence</strong></span><span class="app-version">V5.1</span></div>
           <p class="app-kicker">INFRASTRUCTURE OVERVIEW</p>
           <h2>Dashboard</h2>
           <p class="app-muted">USA + Netherlands</p>
@@ -99,7 +99,7 @@
       <div class="feature-grid">
         <article class="feature-card feature-wide"><div class="feature-icon">◈</div><span class="feature-id">01</span><h3>Unified Dashboard</h3><p>Текущая картина двух серверов: ресурсы, статусы сервисов, возраст телеметрии и отдельные карточки Cronitor — без ложного общего «всё зелёное».</p><span class="feature-tail">USA + NETHERLANDS</span></article>
         <article class="feature-card"><div class="feature-icon purple">⌁</div><span class="feature-id">02</span><h3>Performance history</h3><p>Rolling-история US: CPU, RAM, диск, load, swap, PSI, OOM и память Finance-сервисов. Отдельные почасовые тренды NL; частота и доступные показатели зависят от хоста.</p><span class="feature-tail">24-HOUR WINDOW</span></article>
-        <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>История наблюдаемых состояний трёх Finance-сервисов и трёх US-таймеров с сохранением кратких отказов. Пропуски видимы; это не SLA и не подтверждение успешных заданий.</p><span class="feature-tail">QUALITY AWARE</span></article>
+        <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>Для US — история наблюдаемых состояний Finance-сервисов и таймеров; для NL — пять почасовых шкал сервисов с отображением смешанных состояний и пропусков. Наблюдения не равны SLA uptime.</p><span class="feature-tail">QUALITY AWARE</span></article>
         <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API. Техническая телеметрия отделена от пользовательских финансовых данных.</p><span class="feature-tail">ACCESS CONTROL</span></article>
       </div>
     </section>
@@ -121,7 +121,7 @@
               <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/us.svg" width="38" height="25" alt=""><span><strong>USA</strong><small>Personal Finance</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>8%</strong></div><div><small>RAM</small><strong>42%</strong></div><div><small>Disk</small><strong>36%</strong></div><div><small>Load 1m</small><strong>0.19</strong></div></div><p class="host-caption">3 services · 3 scheduled timers</p></article>
               <article class="demo-host"><div class="demo-host-head"><div><img src="assets/flags/nl.svg" width="38" height="25" alt=""><span><strong>Netherlands</strong><small>VCC & AML Scanner</small></span></div><span class="fresh">FRESH · DEMO</span></div><div class="metric-grid"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load 1m</small><strong>0.08</strong></div></div><p class="host-caption">5 monitored services · history available</p></article>
             </div>
-            <div class="quality-section"><span>Current telemetry <b>DEMO</b></span><span>External health <b>DEMO</b></span><span>US history <b>24H · DEMO</b></span></div>
+            <div class="quality-section"><span>Current telemetry <b>DEMO</b></span><span>External health <b>DEMO</b></span><span>US + NL reliability <b>24H · DEMO</b></span></div>
             <div class="external-inline" aria-label="Синтетический пример карточек Cronitor"><span><b>USA</b> CRONITOR · HEALTHY <em>DEMO</em></span><span><b>Netherlands</b> CRONITOR · HEALTHY <em>DEMO</em></span></div>
           </section>
 
@@ -140,6 +140,20 @@
             <div class="demo-heading"><div><p class="app-kicker">HOST DETAIL / NL</p><h3><img src="assets/flags/nl.svg" width="30" height="20" alt=""> Netherlands</h3><p>Monitoring hub · illustrative hourly trend</p></div><span class="quality-tag">DEMO DATA</span></div>
             <div class="metric-grid metric-grid-four"><div><small>CPU</small><strong>3%</strong></div><div><small>RAM</small><strong>27%</strong></div><div><small>Disk</small><strong>22%</strong></div><div><small>Load</small><strong>0.08</strong></div></div>
             <div class="demo-split"><div class="info-panel"><h4>CPU · 24 hours <span>DEMO</span></h4><svg class="trend" role="img" aria-label="Демонстрационный график CPU, не реальные данные" viewBox="0 0 580 135"><path d="M0 112H580M0 70H580M0 28H580" stroke="#303647" fill="none"/><polyline points="5,94 32,83 57,94 84,90 109,62 138,84 165,75 192,86 219,66 244,72 271,88 297,56 323,78 350,49 378,70 405,43 433,58 458,70 486,45 514,64 542,48 575,59" fill="none" stroke="#fe7c32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><small class="chart-caption">Illustrative trend · 24 hourly buckets</small></div><div class="info-panel"><h4>Observability <span>5 SERVICES</span></h4><div class="service-line">Control Center <span>DEMO · ACTIVE</span></div><div class="service-line">Monitoring API <span>DEMO · ACTIVE</span></div><div class="service-line">AML Scanner <span>DEMO · ACTIVE</span></div><div class="service-line">Scanner Mini App <span>DEMO · ACTIVE</span></div><div class="service-line">Edge connection <span>DEMO · ACTIVE</span></div></div></div>
+
+            <div class="info-panel nl-observed-demo" aria-label="Netherlands observed reliability · static synthetic example">
+              <h4>Observed Reliability · Netherlands <span>24H · DEMO DATA</span></h4>
+              <p class="demo-rail-note">Пять сервисов · укрупнённые почасовые группы состояний. Это иллюстрация интерфейса, а не история реальных отказов.</p>
+              <div class="nl-rail-grid">
+                <div class="nl-rail-item"><p class="demo-rail-name">Control Center</p><div class="demo-reliability-rail" role="img" aria-label="Синтетические почасовые состояния Control Center: только пример, не реальные наблюдения"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span></div></div>
+                <div class="nl-rail-item"><p class="demo-rail-name">Monitoring API</p><div class="demo-reliability-rail" role="img" aria-label="Синтетические почасовые состояния Monitoring API: только пример, не реальные наблюдения"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="unknown"></span><span class="unknown"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span></div></div>
+                <div class="nl-rail-item"><p class="demo-rail-name">AML News Bot</p><div class="demo-reliability-rail" role="img" aria-label="Синтетические почасовые состояния AML News Bot: только пример, не реальные наблюдения"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="down"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span></div></div>
+                <div class="nl-rail-item"><p class="demo-rail-name">Scanner Mini App</p><div class="demo-reliability-rail" role="img" aria-label="Синтетические почасовые состояния Scanner Mini App: только пример, не реальные наблюдения"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span></div></div>
+                <div class="nl-rail-item"><p class="demo-rail-name">Edge connection</p><div class="demo-reliability-rail" role="img" aria-label="Синтетические почасовые состояния Edge connection: только пример, не реальные наблюдения"><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="unknown"></span><span class="unknown"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span><span class="ok"></span></div></div>
+              </div>
+              <small class="chart-caption">Lime — observed active · Red — failed/mixed · Grey — unknown</small>
+              <p class="demo-rail-note">В защищённой Mini App доступны реальные наблюдения по пяти сервисам NL. Почасовые выборки не являются непрерывным uptime или SLA. История NL-таймеров пока не собирается.</p>
+            </div>
             <p class="note-line">External Health · Cronitor: <strong>HEALTHY · DEMO</strong>. Anon memory: доступны не все серии. Пропущенные измерения помечаются <strong>NO_DATA</strong>.</p>
           </section>
         </div>
@@ -240,7 +254,7 @@ Anon RAM история: 3/5
           <div class="telegram-preview" aria-label="Статическая демонстрация меню Telegram Bot 5.0, не настоящий чат">
             <div class="telegram-preview-head">
               <span class="telegram-avatar" aria-hidden="true">K</span>
-              <span><strong>Koroleff VCC 5.0</strong><small>Infrastructure Intelligence · DEMO</small></span>
+              <span><strong>Koroleff VCC 5.1</strong><small>Infrastructure Intelligence · DEMO</small></span>
               <span class="telegram-preview-label">SYNTHETIC</span>
             </div>
             <div class="telegram-chat">
@@ -292,9 +306,9 @@ Anon RAM история: 3/5
     </section>
 
     <section class="closing wrap" aria-labelledby="closing-title">
-      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>V5 Mini App дополнена независимым Cronitor External Health, а первая доставка Digest 2.0 в 21:00 МСК подтверждена. Новое меню Telegram Bot 5.0 уже работает, а историческая телеметрия US и графики в Mini App приняты 11 ноября. Следующий этап — улучшение аналитики ежедневного дайджеста.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
+      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>VCC 5.1 добавил Observed Reliability во вкладку Netherlands: пять почасовых историй сервисов с честным отображением неизвестных и смешанных состояний. История US, Cronitor, Digest 2.0 и Telegram Bot V5 остаются доступны. Следующий этап — Monitoring Intelligence и более полезный Infrastructure Digest 3.0.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.0 / INFRASTRUCTURE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.1 / INFRASTRUCTURE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>
 </body>
 </html>
