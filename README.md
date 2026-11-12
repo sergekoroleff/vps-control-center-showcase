@@ -1,5 +1,14 @@
 # VPS Control Center — Public Showcase
 
+## LATEST SHOWCASE RELEASE · 12.11.2026 — VCC 5.3.1 PERFORMANCE INTELLIGENCE
+
+**OWNER ACCEPTED / LIVE IN PROTECTED TELEGRAM MINI APP:** VCC 5.3.1 Dashboard Performance Intelligence is available with US/NL CPU+RAM visualizations, USA 1h/6h/24h and NL 6h/24h selectors, sampled CPU P95/Peak, RAM P95, pointer/touch values and source-quality guards. The owner confirmed the new UI appeared in Telegram after a hash-verified production cutover. The release is frontend-only: original 3-tab Mini App, Cronitor, Infrastructure Insights, backend, telemetry collectors and Digest timer were preserved.
+
+**Public showcase:** the Dashboard tab now includes a responsive **STATIC DEMO** Performance Intelligence mockup. All charts, P95/Peak, observed counts and host states are fictional; the public illustrated chips are *not* live controls. The protected Mini App has the actual interactions. No production API connection or confidential system metrics are exposed. [V5.3.1 release note](PERFORMANCE_INTELLIGENCE_V531_SHOWCASE_RELEASE_2026-11-12.md).
+
+**Separately pending:** first scheduled **Infrastructure Digest 3.0** delivery at 21:00 MSK was not yet independently verified at the time of this release; V5.3.1 visual acceptance does not imply Digest acceptance.
+
+
 ## CURRENT DIGEST RELEASE · 12.11.2026 — INFRASTRUCTURE DIGEST 3.0 CUTOVER PASS
 
 **Delivery status: not yet independently confirmed for V3.** Production service was switched to a separately pinned Digest V3 report generator and adapter on 12 November. The original Sender V2, 21:00 Europe/Moscow timer, both existing SQLite delivery ledgers and guarded duplicate/ambiguous-ack logic remain untouched. Production verification passed pinned file hashes, report preview, sender integrity/preflight, effective service ExecStart, intact timer and **no Telegram send** during cutover. This is **NOT** proof that the first real scheduled 3.0 message was received.
