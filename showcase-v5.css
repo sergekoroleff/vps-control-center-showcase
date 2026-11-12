@@ -232,3 +232,13 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 .demo-reliability-rail span.down{background:#f06d78}
 .demo-reliability-rail span.unknown{background:#717988}
 .demo-rail-note{font-size:11px;color:#a8b4c2;margin:14px 0 0;line-height:1.6}
+
+/* 12.11.2026 · VCC 5.1 NL Observed Reliability, synthetic only */
+.nl-observed-demo{margin:16px 0 20px}
+.nl-observed-demo > .demo-rail-note:first-of-type{margin-top:0;margin-bottom:17px}
+.nl-rail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin:18px 0 14px}
+.nl-rail-item{min-width:0}
+.nl-rail-item .demo-rail-name{margin:0 0 7px;font-weight:630}
+.nl-rail-item .demo-reliability-rail{margin-bottom:6px;height:14px}
+.nl-observed-demo .chart-caption{display:block;color:#b0becd;font-size:10px;margin-top:8px}
+@media(max-width:620px){.nl-rail-grid{grid-template-columns:1fr;gap:8px}.nl-observed-demo{padding:16px}.nl-observed-demo h4{flex-wrap:wrap}}
