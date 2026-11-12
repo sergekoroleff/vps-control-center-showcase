@@ -1,5 +1,12 @@
 # VCC 5.3.1 — Performance Intelligence · Showcase Release
 
+## FINAL DELIVERY CONFIRMATION · 12.11.2026 21:00 MSK
+
+The **first scheduled Infrastructure Digest 3.0** was received in Telegram at **21:00 MSK** and its **systemd outcome independently checked**: `Result=success`, `ExecMainStatus=0`, `DELIVERY_SENT: 1`, `DELIVERY_PROCESS_COMPLETE`. No manual resend was required. The original V2 sender/ledger protection and evening timer remain. The SQLite `SENT` row was **not separately inspected**; do not claim that it was.
+
+The public dashboard and digest preview are deliberately **synthetic**. This note does not publish real production snapshots or the owner's Telegram screenshot. Earlier pending-delivery statements in historical release notes are superseded by this final confirmation.
+
+
 ## Subsequent update · 12 November 2026 21:00 MSK
 
 Separately from the already accepted VCC 5.3.1 Mini App, the owner **received the first scheduled Infrastructure Digest 3.0 Telegram message** at 21:00 MSK on 12 Nov. Digest content and time are confirmed. Systemd send result and dated ledger outcome await a read-only check. Previous pending references below predate this event. The digest's fixed header `VCC 5.2` does not mean VCC 5.3.1 UI was rolled back.
