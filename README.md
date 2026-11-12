@@ -1,5 +1,16 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT DIGEST RELEASE · 12.11.2026 — INFRASTRUCTURE DIGEST 3.0 CUTOVER PASS
+
+**Delivery status: not yet independently confirmed for V3.** Production service was switched to a separately pinned Digest V3 report generator and adapter on 12 November. The original Sender V2, 21:00 Europe/Moscow timer, both existing SQLite delivery ledgers and guarded duplicate/ambiguous-ack logic remain untouched. Production verification passed pinned file hashes, report preview, sender integrity/preflight, effective service ExecStart, intact timer and **no Telegram send** during cutover. This is **NOT** proof that the first real scheduled 3.0 message was received.
+
+**New report capabilities:** sampled 24h US CPU P95/max/high-sample counts and gaps, NL observed service-state failures, independently fresh Cronitor US/NL status, and missing/partial memory coverage; no SLA inference from sampled state. Protected VCC 5.2 Mini App/Insights remain as previously accepted.
+
+**Public mockup updated:** the Digest section now illustrates the V3 format using **fictional synthetic statistics only**. Real production metrics, incidents, tokens and messages are not published or requested from the browser. Digest 3.0 first-delivery confirmation remains the next acceptance gate.
+
+[**Digest 3.0 public cutover note**](INFRASTRUCTURE_DIGEST_30_CUTOVER_SHOWCASE_2026-11-12.md) · [Static showcase](https://vps-monitor.koroleff.online/).
+
+
 ## CURRENT RELEASE · 12.11.2026 — VCC 5.2 MONITORING INTELLIGENCE ACCEPTED
 
 **Accepted private feature:** VCC 5.2 Telegram Mini App Dashboard now displays **Infrastructure Insights · Needs Attention**, a list of current issues from verified fresh US/NL service status, independently valid Cronitor effective status and history data-quality feeds. CRITICAL vs WARNING vs unknown/no-data are kept separate; **NO ISSUES OBSERVED** never means measured 100% uptime. No additional backend, collector or external status endpoint. Owner verified the updated Telegram Dashboard works.
