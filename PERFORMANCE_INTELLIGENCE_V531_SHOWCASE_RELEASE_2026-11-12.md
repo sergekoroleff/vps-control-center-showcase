@@ -1,5 +1,10 @@
 # VCC 5.3.1 — Performance Intelligence · Showcase Release
 
+## Subsequent update · 12 November 2026 21:00 MSK
+
+Separately from the already accepted VCC 5.3.1 Mini App, the owner **received the first scheduled Infrastructure Digest 3.0 Telegram message** at 21:00 MSK on 12 Nov. Digest content and time are confirmed. Systemd send result and dated ledger outcome await a read-only check. Previous pending references below predate this event. The digest's fixed header `VCC 5.2` does not mean VCC 5.3.1 UI was rolled back.
+
+
 **Date:** 12 November 2026  
 **Private production feature:** **OWNER ACCEPTED** (cutover PASS and UI visibly displayed in Telegram)  
 **Public representation:** **STATIC SYNTHETIC DEMONSTRATION**. No real telemetry, authentication tokens, private usernames, IP addresses, incident details or production API requests.
