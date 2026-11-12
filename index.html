@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Koroleff VCC 5.3.1 — защищённая Telegram Mini App с интерактивным Performance Intelligence и Infrastructure Insights: актуальные состояния US/NL, независимый Cronitor, качество данных и Observed Reliability. Infrastructure Digest 3.0 переключён на действующий таймер 21:00 МСК; первая доставка новой версии пока не подтверждена.">
+  <meta name="description" content="Koroleff VCC 5.3.1 — защищённая Telegram Mini App с интерактивным Performance Intelligence и Infrastructure Insights: актуальные состояния US/NL, независимый Cronitor, качество данных и Observed Reliability. Infrastructure Digest 3.0 впервые получен в Telegram 12.11.2026 в 21:00 МСК; техническая сверка журнала доставки ещё не завершена.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://vps-monitor.koroleff.online/">
   <meta property="og:type" content="website">
@@ -238,17 +238,17 @@
       <div class="wrap">
         <div class="section-head">
           <div><p class="eyebrow">04 / DAILY SIGNAL</p><h2 id="digest-title">Главное за день<br><span>В одном сообщении</span></h2></div>
-          <p>Infrastructure Digest 3.0 добавляет к текущим метрикам USA и Netherlands аналитические сигналы: CPU P95 и кратковременные пики US, покрытие истории, почасовые наблюдения сервисов NL и независимый Cronitor. Переключение выполнено 12 ноября; существующий таймер 21:00 МСК и защищённый Sender 2.0 сохранены. <strong>Первая фактическая доставка Digest 3.0 пока ожидается.</strong></p>
+          <p>Infrastructure Digest 3.0 добавляет к текущим метрикам USA и Netherlands аналитические сигналы: CPU P95 и кратковременные пики US, покрытие истории, почасовые наблюдения сервисов NL и независимый Cronitor. Переключение выполнено 12 ноября; существующий таймер 21:00 МСК и защищённый Sender 2.0 сохранены. <strong>Первая реальная доставка Digest 3.0 получена в Telegram 12 ноября в 21:00 МСК.</strong> Сверка системного журнала доставки ещё ожидается.</p>
         </div>
         <div class="digest-layout">
           <div class="digest-benefits">
             <div class="digest-point"><span class="digest-point-no">01</span><div><h3>Два независимых хоста</h3><p>🇺🇸 USA и 🇳🇱 Netherlands в одном отчёте, плюс US CPU P95/пики и NL Observed Reliability</p></div></div>
             <div class="digest-point"><span class="digest-point-no">02</span><div><h3>Свежесть прежде всего</h3><p>Отдельные сигналы качества US/NL: полнота выборок, пробелы, неизвестные состояния, свежесть Cronitor</p></div></div>
             <div class="digest-point"><span class="digest-point-no">03</span><div><h3>Контролируемая доставка</h3><p>Исходный Sender 2.0 и оба журнала доставки сохранены: защита от дублей, осторожная обработка 429 и неопределённых ответов Telegram</p></div></div>
-            <p class="digest-disclaimer"><strong>Статус 12.11.2026</strong> · Digest 3.0 установлен, preflight/cutover PASS. Вечерний таймер 21:00 МСК сохранён. Первое реальное сообщение 3.0 ещё не подтверждено. Ранее успешно доставлялся Digest 2.0.</p>
+            <p class="digest-disclaimer"><strong>Статус 12.11.2026</strong> · Digest 3.0 доставлен в Telegram 12 ноября ровно в 21:00 МСК; получение и формат подтверждены владельцем. Техническая проверка результата systemd и журнала доставки ещё ожидается.</p>
           </div>
           <div class="digest-visual" aria-label="Синтетический пример Infrastructure Digest 3.0, не реальная доставка">
-            <div class="digest-top"><span class="digest-orbit" aria-hidden="true">◉</span><span><strong>Infrastructure Digest 3.0</strong><small>TELEGRAM · 21:00 MSK · DELIVERY PENDING</small></span><span class="digest-demo">DEMO DATA</span></div>
+            <div class="digest-top"><span class="digest-orbit" aria-hidden="true">◉</span><span><strong>Infrastructure Digest 3.0</strong><small>TELEGRAM · 21:00 MSK · DELIVERY CONFIRMED</small></span><span class="digest-demo">DEMO DATA</span></div>
             <pre class="digest-message">🛰 VCC 5.2 · Infrastructure Digest 3.0
 🕘 ДЕМО · 21:00 МСК
 
@@ -271,7 +271,7 @@ CPU 3% · RAM 27% · Disk 22%
 ✅ В проверенных примерах проблем нет
 ℹ️ Наблюдения ≠ uptime SLA
 * Активный таймер ≠ успешная задача</pre>
-            <p class="digest-visual-note">STATIC DEMO · все показатели и события вымышленные · это не копия полученного сообщения. Digest 3.0 установлен; первая доставка ожидается</p>
+            <p class="digest-visual-note">STATIC DEMO · все показатели и события вымышленные · это не копия полученного сообщения. Digest 3.0 доставлен 12 ноября в 21:00 МСК · скриншот настоящего сообщения не опубликован</p>
           </div>
         </div>
       </div>
@@ -346,7 +346,7 @@ CPU 3% · RAM 27% · Disk 22%
     </section>
 
     <section class="closing wrap" aria-labelledby="closing-title">
-      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>VCC 5.3.1 принят в Telegram: Dashboard дополнен интерактивными графиками CPU/RAM, выбором периода и статистикой P95/Peak, сохраняя Infrastructure Insights, Observed Reliability и Cronitor. Отдельный Infrastructure Digest 3.0 переключён на вечерний таймер; первая реальная доставка всё ещё ожидает подтверждения.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
+      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>VCC 5.3.1 принят в Telegram: Dashboard дополнен интерактивными графиками CPU/RAM, выбором периода и статистикой P95/Peak, сохраняя Infrastructure Insights, Observed Reliability и Cronitor. Отдельный Infrastructure Digest 3.0 впервые получен в Telegram 12 ноября в 21:00 МСК; техническая сверка журнала ещё открыта.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
   </main>
   <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.3.1 / PERFORMANCE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>
