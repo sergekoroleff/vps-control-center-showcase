@@ -1,5 +1,12 @@
 # VPS Control Center — Public Showcase
 
+## DELIVERY CONFIRMED · 12.11.2026 21:00 MSK — INFRASTRUCTURE DIGEST 3.0
+
+**Owner-received actual scheduled Telegram message at 21:00 MSK:** real bot message on 12 Nov 2026 contained **Infrastructure Digest 3.0**, current USA/Netherlands, sampled 24h US performance intelligence, NL reliability and independent Cronitor with explicit no-SLA caveats. This is confirmed **delivery and message format**, not merely a production cutover. The systemd service result and SQLite `SENT` evidence for this date have not yet been independently checked; do not claim otherwise.
+
+**Public disclosure:** all numeric stats and graph values on this site remain **STATIC SYNTHETIC DEMO**. The received Telegram screenshot and actual real production metrics are **not** placed in public GitHub. Previous “first delivery pending” lines are historical notes superseded by this update. VCC 5.3.1 Mini App visual acceptance remains independent; Digest's `VCC 5.2` header is a hard-coded template label.
+
+
 ## LATEST SHOWCASE RELEASE · 12.11.2026 — VCC 5.3.1 PERFORMANCE INTELLIGENCE
 
 **OWNER ACCEPTED / LIVE IN PROTECTED TELEGRAM MINI APP:** VCC 5.3.1 Dashboard Performance Intelligence is available with US/NL CPU+RAM visualizations, USA 1h/6h/24h and NL 6h/24h selectors, sampled CPU P95/Peak, RAM P95, pointer/touch values and source-quality guards. The owner confirmed the new UI appeared in Telegram after a hash-verified production cutover. The release is frontend-only: original 3-tab Mini App, Cronitor, Infrastructure Insights, backend, telemetry collectors and Digest timer were preserved.
