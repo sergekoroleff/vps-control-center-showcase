@@ -1,5 +1,14 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT SHOWCASE RELEASE · 12.11.2026 — VCC 5.1 NETHERLANDS OBSERVED RELIABILITY
+
+**Owner-accepted production functionality:** VCC V5 Netherlands tab now shows **five real service-state observed timelines**, based on existing hourly service observations; mixed/failed are red, recognized active green, unknown/no-data grey. This is not a measured uptime SLA, and **NL timer/restart histories are not claimed**. API authorization, US timelines, NL resource/memory, Cronitor and legacy V4 remain unchanged. Production owner visually accepted the new Netherlands UI on 12 November 2026.
+
+**Public site refresh:** upgraded to **VCC 5.1** messaging and added a responsive Netherlands observed-reliability card to the three-tab showcase preview, showing **five fictional, synthetic state timelines** with sample red/grey segments. These are illustrative states **NOT actual incidents, current server states or live telemetry**. Public site remains static, does not call protected VCC/Cronitor APIs, and contains no private access details. Existing US preview, bot, digest and navigation remain.
+
+[**12 November release note**](NL_OBSERVED_RELIABILITY_SHOWCASE_RELEASE_2026-11-12.md) · [Public static site](https://vps-monitor.koroleff.online/) · [11 November US history release](US_HISTORY_SHOWCASE_RELEASE_2026-11-11.md).
+
+
 ## CURRENT SHOWCASE RELEASE · 11.11.2026 — VCC 5.0 US HISTORICAL INTELLIGENCE ACCEPTED
 
 **Owner-accepted production feature:** VCC 5.0 protected Telegram Mini App now displays **real historical US telemetry** alongside NL. Existing Dashboard / USA / Netherlands tabs, separate Cronitor External Health, read-only Telegram authorization and legacy V4 fallback remain. US history includes CPU, derived RAM/Disk utilization, Load, Swap, PSI, cumulative OOM, 3 Finance service-memory charts and observed state/restart/timer timelines. Status/coverage/gaps have explicit quality semantics; rolling 24h refers to the window, not a guarantee of 24 hours already accumulated at release. Owner accepted Chrome 7/7 and real Telegram Mini App rendering; final server check confirmed four active components and unauthenticated API 401.
