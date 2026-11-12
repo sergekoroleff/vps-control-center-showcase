@@ -1,5 +1,14 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT RELEASE · 12.11.2026 — VCC 5.2 MONITORING INTELLIGENCE ACCEPTED
+
+**Accepted private feature:** VCC 5.2 Telegram Mini App Dashboard now displays **Infrastructure Insights · Needs Attention**, a list of current issues from verified fresh US/NL service status, independently valid Cronitor effective status and history data-quality feeds. CRITICAL vs WARNING vs unknown/no-data are kept separate; **NO ISSUES OBSERVED** never means measured 100% uptime. No additional backend, collector or external status endpoint. Owner verified the updated Telegram Dashboard works.
+
+**Public showcase:** front-page V5.2 branding and a new responsive Dashboard demo section representing the feature with synthetic `NO ISSUES OBSERVED` and source badges. Every value/state in the preview is illustrative, not live. No private API calls. US history and NL Observed Reliability demos remain. **Infrastructure Digest 3.0** is the next planned phase, not already live.
+
+[**V5.2 synthetic showcase release note**](INFRASTRUCTURE_INSIGHTS_V52_SHOWCASE_RELEASE_2026-11-12.md) · [Live static showcase](https://vps-monitor.koroleff.online/) · [V5.1 NL release note](NL_OBSERVED_RELIABILITY_SHOWCASE_RELEASE_2026-11-12.md).
+
+
 ## CURRENT SHOWCASE RELEASE · 12.11.2026 — VCC 5.1 NETHERLANDS OBSERVED RELIABILITY
 
 **Owner-accepted production functionality:** VCC V5 Netherlands tab now shows **five real service-state observed timelines**, based on existing hourly service observations; mixed/failed are red, recognized active green, unknown/no-data grey. This is not a measured uptime SLA, and **NL timer/restart histories are not claimed**. API authorization, US timelines, NL resource/memory, Cronitor and legacy V4 remain unchanged. Production owner visually accepted the new Netherlands UI on 12 November 2026.
