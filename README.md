@@ -1,5 +1,12 @@
 # VPS Control Center — Public Showcase
 
+## FINAL DELIVERY CONFIRMATION · 12.11.2026 21:00 MSK
+
+The **first scheduled Infrastructure Digest 3.0** was received in Telegram at **21:00 MSK** and its **systemd outcome independently checked**: `Result=success`, `ExecMainStatus=0`, `DELIVERY_SENT: 1`, `DELIVERY_PROCESS_COMPLETE`. No manual resend was required. The original V2 sender/ledger protection and evening timer remain. The SQLite `SENT` row was **not separately inspected**; do not claim that it was.
+
+The public dashboard and digest preview are deliberately **synthetic**. This note does not publish real production snapshots or the owner's Telegram screenshot. Earlier pending-delivery statements in historical release notes are superseded by this final confirmation.
+
+
 ## DELIVERY CONFIRMED · 12.11.2026 21:00 MSK — INFRASTRUCTURE DIGEST 3.0
 
 **Owner-received actual scheduled Telegram message at 21:00 MSK:** real bot message on 12 Nov 2026 contained **Infrastructure Digest 3.0**, current USA/Netherlands, sampled 24h US performance intelligence, NL reliability and independent Cronitor with explicit no-SLA caveats. This is confirmed **delivery and message format**, not merely a production cutover. The systemd service result and SQLite `SENT` evidence for this date have not yet been independently checked; do not claim otherwise.
