@@ -15,7 +15,7 @@
 
 **Accepted private feature:** VCC 5.2 Telegram Mini App Dashboard now displays **Infrastructure Insights · Needs Attention**, a list of current issues from verified fresh US/NL service status, independently valid Cronitor effective status and history data-quality feeds. CRITICAL vs WARNING vs unknown/no-data are kept separate; **NO ISSUES OBSERVED** never means measured 100% uptime. No additional backend, collector or external status endpoint. Owner verified the updated Telegram Dashboard works.
 
-**Public showcase:** front-page V5.2 branding and a new responsive Dashboard demo section representing the feature with synthetic `NO ISSUES OBSERVED` and source badges. Every value/state in the preview is illustrative, not live. No private API calls. US history and NL Observed Reliability demos remain. **Infrastructure Digest 3.0** is the next planned phase, not already live.
+**Public showcase:** front-page V5.2 branding and a new responsive Dashboard demo section representing the feature with synthetic `NO ISSUES OBSERVED` and source badges. Every value/state in the preview is illustrative, not live. No private API calls. US history and NL Observed Reliability demos remain. **Infrastructure Digest 3.0 has since passed a production cutover**, but its first scheduled Telegram delivery is **not yet independently confirmed**; see the current Digest section above.
 
 [**V5.2 synthetic showcase release note**](INFRASTRUCTURE_INSIGHTS_V52_SHOWCASE_RELEASE_2026-11-12.md) · [Live static showcase](https://vps-monitor.koroleff.online/) · [V5.1 NL release note](NL_OBSERVED_RELIABILITY_SHOWCASE_RELEASE_2026-11-12.md).
 
