@@ -242,3 +242,21 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 .nl-rail-item .demo-reliability-rail{margin-bottom:6px;height:14px}
 .nl-observed-demo .chart-caption{display:block;color:#b0becd;font-size:10px;margin-top:8px}
 @media(max-width:620px){.nl-rail-grid{grid-template-columns:1fr;gap:8px}.nl-observed-demo{padding:16px}.nl-observed-demo h4{flex-wrap:wrap}}
+
+/* 12.11.2026 · VCC 5.2 Infrastructure Insights: static synthetic presentation */
+.insights-demo{margin:17px 0 7px;padding:22px;border:1px solid rgba(193,253,14,.23);background:linear-gradient(118deg,rgba(193,253,14,.06),rgba(158,110,198,.045) 70%),#1a202c;border-radius:17px}
+.insights-demo-top{display:flex;align-items:center;gap:13px;flex-wrap:wrap}
+.insights-demo-mark{display:grid;place-items:center;flex:0 0 39px;height:39px;border-radius:12px;color:#c1fd0e;background:rgba(193,253,14,.1);font-size:27px}
+.insights-demo-title{min-width:0;flex:1}
+.insights-demo-title h4{margin:0 0 5px;font-size:15px;color:#f0f4f8}
+.insights-demo-title small{display:block;color:#9aa9b8;font-size:11px}
+.insights-demo-badge{border:1px solid rgba(193,253,14,.3);border-radius:50px;padding:7px 10px;font-size:9px;letter-spacing:.04em;white-space:normal;color:#d7f8a3;background:rgba(193,253,14,.065);font-weight:800}
+.insights-demo-state{display:flex;align-items:center;gap:14px;margin:19px 0 14px;padding:15px 17px;border:1px solid #394652;background:#151c26;border-radius:12px}
+.insights-demo-state-icon{display:grid;place-items:center;width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:rgba(193,253,14,.13);color:#c1fd0e;font-weight:900}
+.insights-demo-state strong{font-size:12px;color:#e3f9c1;letter-spacing:.025em}
+.insights-demo-state p{color:#aab7c6;font-size:11px;margin:5px 0 0;line-height:1.65}
+.insights-demo-details{display:flex;flex-wrap:wrap;gap:8px}
+.insights-demo-details span{border:1px solid #384455;border-radius:9px;color:#a9b7c7;padding:8px 10px;background:#202a36;font-size:10px}
+.insights-demo-details b{color:#d7e0eb}
+.insights-demo-note{margin:15px 0 0;font-size:10px;line-height:1.8;color:#a3b4c5}
+@media(max-width:620px){.insights-demo{padding:15px}.insights-demo-top{gap:10px}.insights-demo-mark{flex-basis:33px;height:33px}.insights-demo-badge{width:100%;text-align:center}.insights-demo-state{padding:12px}}
