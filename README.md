@@ -1,5 +1,14 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT SHOWCASE UPDATE · 13.11.2026 — VCC 5.4 EXTERNAL SMART ALERTS WATCHDOG
+
+**Infrastructure production acceptance PASS:** the Smart Alerts 2.0 shadow runtime, Operational Watchdog and a separate fail-closed Cronitor heartbeat sender are operating. One initial controlled ping was owner-confirmed in Cronitor; three automatic successful HTTP transport responses were observed during final read-only NL acceptance, with zero recorded suppressed/failed sends in that window. This **does not** mean the subsequent three events were each independently checked in the Cronitor UI.
+
+**What is not shipped:** Telegram Smart Alerts 2.0 incident/RECOVERED notifications remain **disabled**. The protected Telegram Mini App user interface remains at **V5.3.1**; the new Watchdog monitor is an additional infrastructure signal, **not** a new live Mini App card. Existing US/NL Cronitor status, evening Digest 3.0 and legacy Memory Alerts are preserved.
+
+The public site adds a separate static illustration of the Shadow → Watchdog → Cronitor heartbeat gate. All UI snapshots/states remain **synthetic DEMO**, not live data. No secret values, monitor keys, URLs, or private internal endpoints are disclosed. [VCC 5.4 public release note](SMART_ALERTS_V54_INFRASTRUCTURE_SHOWCASE_2026-11-13.md).
+
+
 ## FINAL DELIVERY CONFIRMATION · 12.11.2026 21:00 MSK
 
 The **first scheduled Infrastructure Digest 3.0** was received in Telegram at **21:00 MSK** and its **systemd outcome independently checked**: `Result=success`, `ExecMainStatus=0`, `DELIVERY_SENT: 1`, `DELIVERY_PROCESS_COMPLETE`. No manual resend was required. The original V2 sender/ledger protection and evening timer remain. The SQLite `SENT` row was **not separately inspected**; do not claim that it was.
