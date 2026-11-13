@@ -1,5 +1,14 @@
 # VPS Control Center — Public Showcase
 
+## CURRENT SHOWCASE RELEASE · 13.11.2026 — VCC 5.4.10 TELEGRAM SMART ALERTS 2.0 ACTIVE
+
+**New production milestone:** Smart Alerts 2.0 Telegram delivery is enabled as a separate background job alongside the previously accepted Shadow → Operational Watchdog → Cronitor pipeline. The existing VCC bot accepted one controlled **synthetic test message** and the owner confirmed actual receipt. Delivery engine offline tests **9/9**, Telegram response validator **5/5**, first scheduled automatic job succeeded; **7/7** relevant timers active. At-most-one automatic send attempt: ambiguous/429/timeout outcomes remain reserved for manual investigation, not blindly retried.
+
+**Acceptance boundary:** the production outbox had no incident batches, so a genuine DETECTED → RECOVERED alert cycle is **not yet verified end-to-end**. The public website remains **static with exclusively synthetic demo telemetry**, does not contain or read secrets/recipient identifiers, and cannot dispatch alerts. Protected Telegram Mini App UI remains V5.3.1, and legacy Memory Alerts plus evening Infrastructure Digest 3.0 are preserved. Historical infrastructure-only Telegram-disabled notes below predate this release.
+
+[**Public Telegram Delivery 5.4.10 release note**](SMART_ALERTS_V5410_TELEGRAM_SHOWCASE_2026-11-13.md) · [**Live static Showcase**](https://vps-monitor.koroleff.online/).
+
+
 ## CURRENT SHOWCASE UPDATE · 13.11.2026 — VCC 5.4 EXTERNAL SMART ALERTS WATCHDOG
 
 **Infrastructure production acceptance PASS:** the Smart Alerts 2.0 shadow runtime, Operational Watchdog and a separate fail-closed Cronitor heartbeat sender are operating. One initial controlled ping was owner-confirmed in Cronitor; three automatic successful HTTP transport responses were observed during final read-only NL acceptance, with zero recorded suppressed/failed sends in that window. This **does not** mean the subsequent three events were each independently checked in the Cronitor UI.
