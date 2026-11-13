@@ -280,3 +280,18 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 .performance-demo-chart{display:block;width:100%;height:auto;min-height:100px;max-height:175px;margin:2px auto 6px}
 .performance-demo-note{margin:10px 0 0;color:#99a5b5;font-size:11px;line-height:1.65}
 @media(max-width:680px){.performance-demo{padding:15px}.performance-demo-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.performance-demo-stats strong{font-size:18px}.performance-demo-legend{gap:11px}}
+
+/* VCC 5.4 Smart Alerts 2.0 — static infrastructure watchdog disclosure */
+.watchdog-note{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.75fr);gap:32px;margin-top:24px;padding:29px 32px;border:1px solid rgba(193,253,14,.25);border-radius:23px;background:linear-gradient(115deg,rgba(193,253,14,.045),rgba(158,110,198,.055) 50%,rgba(18,22,30,.98));box-shadow:0 18px 45px rgba(0,0,0,.10)}
+.watchdog-note-overline{display:block;font-size:10px;letter-spacing:.085em;font-weight:850;color:var(--lime)}
+.watchdog-note h3{font-size:20px;line-height:1.4;letter-spacing:-.025em;margin:12px 0 9px;color:var(--text)}
+.watchdog-note-main>p{max-width:610px;font-size:12px;line-height:1.95;color:#aab5c5;margin:0}
+.watchdog-steps{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:19px}
+.watchdog-steps span{font-size:10px;letter-spacing:.02em;font-weight:800;border-radius:8px;padding:8px 11px;color:var(--text);background:#242b38;border:1px solid #3b4557}
+.watchdog-steps span:nth-child(even){border:0;padding:0;background:transparent;color:var(--lime)}
+.watchdog-note-side{border-left:1px solid #3b4557;padding-left:25px;display:flex;flex-direction:column;justify-content:center}
+.watchdog-note-side>strong{color:var(--lime);font-size:14px}
+.watchdog-note-side>p{font-size:12px;line-height:1.8;color:#aab5c5}
+.watchdog-note-side>span{font-size:9px;letter-spacing:.06em;font-weight:850;color:var(--orange);border:1px solid rgba(254,124,50,.24);border-radius:30px;padding:7px 10px;align-self:flex-start}
+@media(max-width:760px){.watchdog-note{grid-template-columns:1fr;gap:18px;padding:23px}.watchdog-note-side{border-left:0;border-top:1px solid #3b4557;padding:17px 0 0}.watchdog-note h3{font-size:18px}}
+@media(max-width:390px){.watchdog-note{padding:17px}.watchdog-steps{gap:6px}.watchdog-steps span{font-size:9px;padding:7px}}
