@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Koroleff VCC 5.4.10: активные Telegram Smart Alerts 2.0, защищённый Outbox, Watchdog и Cronitor heartbeat, Mini App 5.3.1. Все публичные данные синтетические.">
+  <meta name="description" content="Koroleff VCC 6.0: первый реальный AWG 3.1 VPN-профиль и фирменный QR доставлены через приватный Telegram-бот. Проверка туннеля ещё впереди. Публичный сайт — статическое демо.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://vps-monitor.koroleff.online/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Koroleff VCC">
-  <meta property="og:title" content="Koroleff VCC 5.4.10 Telegram Smart Alerts + Mini App 5.3.1">
-  <meta property="og:description" content="Два хоста, Performance Intelligence и Smart Alerts 2.0: автоматическая доставка Telegram включена, тестовое сообщение подтверждено; публичный экран — статическое демо.">
+  <meta property="og:title" content="Koroleff VCC 6.0 · First Real VPN Profile Delivered">
+  <meta property="og:description" content="Настоящий AmneziaWG-клиент создан, .conf и Unonimous QR получены в Telegram. Подключение к интернету через VPN — следующий этап. Сайт использует только синтетическое демо.">
   <meta property="og:url" content="https://vps-monitor.koroleff.online/">
-  <title>Koroleff VCC 5.4.10 Smart Alerts · Mini App 5.3.1</title>
+  <title>Koroleff VCC 6.0 · Real VPN Delivery · Mini App 5.3.1</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="showcase-v5.css">
   <script src="showcase-v5.js" defer></script>
@@ -30,6 +30,7 @@
         <a href="#capabilities">Возможности</a>
         <a href="#experience">Mini App</a>
         <a href="#telegram">Telegram Bot</a>
+        <a href="#vpn-access">VPN Access</a>
         <a href="#external">Cronitor</a>
         <a href="#digest">Дайджест</a>
         <a href="#architecture">Архитектура</a>
@@ -42,18 +43,18 @@
   <main id="main">
     <section class="hero wrap" id="top" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> V5.4.10 / TELEGRAM SMART ALERTS 2.0 · MINI APP V5.3.1</div>
-        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> V5.4.10 ALERT DELIVERY LIVE · V5.3.1 MINI APP</div>
-        <h1 id="hero-title">Два сервера<br>Один <em>взгляд</em></h1>
-        <p class="hero-lead">Личная инфраструктура больше не разбросана между терминалами и отчётами. <strong>Koroleff VCC</strong> объединяет мониторинг США и Нидерландов в одной защищённой Telegram Mini App и быстрых текстовых отчётах V5-бота.</p>
+        <div class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> VCC 6.0 / FIRST REAL VPN CLIENT DELIVERED</div>
+        <div class="release-chip"><span class="small-dot" aria-hidden="true"></span> REAL .CONF + QR DELIVERED · TUNNEL TEST PENDING</div>
+        <h1 id="hero-title">Два сервера<br>Теперь и <em>VPN</em></h1>
+        <p class="hero-lead">От интеллектуального мониторинга двух серверов до реального управления VPN в Telegram. <strong>VCC 6.0</strong> впервые создал AWG 3.1 клиент и доставил владельцу настоящий .conf и фирменный Unonimous QR. Работоспособность туннеля на устройстве ещё предстоит проверить.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#experience">Исследовать интерфейс <span aria-hidden="true">↗</span></a>
-          <a class="btn btn-outline" href="#architecture">Как это устроено <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-primary" href="#vpn-access">Новая глава · VPN <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#experience">Посмотреть Mini App <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-foot">
           <span>PRIVATE BY DESIGN</span><span class="separator-dot" aria-hidden="true"></span>
           <span>TELEGRAM NATIVE</span><span class="separator-dot" aria-hidden="true"></span>
-          <span>READ-ONLY TELEMETRY</span>
+          <span>SECURE PROFILE HANDOFF</span>
         </div>
       </div>
 
@@ -101,6 +102,28 @@
         <article class="feature-card"><div class="feature-icon purple">⌁</div><span class="feature-id">02</span><h3>Performance history</h3><p>Интерактивные графики CPU/RAM на Dashboard: для US 1/6/24 часа, для NL 6/24 часа, P95, Peak и качество выборки. Дополнительные показатели US (swap, PSI, OOM) доступны на вкладке сервера.</p><span class="feature-tail">24-HOUR WINDOW</span></article>
         <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>Для US — история наблюдаемых состояний Finance-сервисов и таймеров; для NL — пять почасовых шкал сервисов с отображением смешанных состояний и пропусков. Наблюдения не равны SLA uptime.</p><span class="feature-tail">QUALITY AWARE</span></article>
         <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API. Техническая телеметрия отделена от пользовательских финансовых данных.</p><span class="feature-tail">ACCESS CONTROL</span></article>
+      </div>
+    </section>
+
+    <section class="section wrap vpn-milestone" id="vpn-access" aria-labelledby="vpn-title">
+      <div class="vpn-milestone-top"><span class="vpn-milestone-label">VCC 6.0 · HISTORIC MILESTONE</span><span class="vpn-milestone-status">REAL PROFILE DELIVERED ✓</span></div>
+      <div class="vpn-milestone-grid">
+        <div class="vpn-milestone-copy">
+          <p class="eyebrow">NEW / TELEGRAM-NATIVE VPN</p>
+          <h2 id="vpn-title">VPN готовят серверы<br><span>Ты получаешь результат</span></h2>
+          <p class="vpn-milestone-lead">Настоящий клиент <strong>AmneziaWG 3.1</strong> впервые создан через защищённую цепочку <strong>Telegram → NL → US → Telegram</strong>. Владелец получил готовый конфигурационный файл и брендированный QR <strong>Unonimous</strong> в личном чате.</p>
+          <div class="vpn-steps" aria-label="Этапы подтверждённой выдачи VPN"><span>01 · Заявка</span><span>02 · Создание peer</span><span>03 · Шифрованная доставка</span><span>04 · .conf + QR</span></div>
+          <p class="vpn-boundary"><strong>Граница приёмки:</strong> выдача реальных файлов подтверждена; импорт на устройство, VPN handshake и выход на сайт пока не проверены. Отзыв доступов и обзор клиентов в Mini App — следующий бэклог, не готовые функции.</p>
+          <a class="vpn-release-link" href="VCC_60_FIRST_REAL_VPN_SHOWCASE_2026-11-20.md">История релиза VCC 6.0 <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="vpn-demo" aria-label="Вымышленная иллюстрация Telegram-выдачи VPN, без действительного QR или ключей">
+          <div class="vpn-demo-header"><span class="vpn-demo-logo">K</span><span><strong>VPS Control Center</strong><small>Telegram · owner-only workflow</small></span><span class="vpn-demo-dot"></span></div>
+          <div class="vpn-demo-message vpn-demo-user">➕ Добавить VPN-устройство</div>
+          <div class="vpn-demo-message vpn-demo-bot"><span class="vpn-demo-overline">DEVICE · SYNTHETIC EXAMPLE</span><strong>Galaxy Demo · Phone</strong><small>Новый AWG 3.1 профиль готов</small></div>
+          <div class="vpn-demo-files"><div><span>▤</span><strong>Client-profile.conf</strong><small>ILLUSTRATION ONLY</small></div><div><span>▦</span><strong>Unonimous QR</strong><small>NOT SCANNABLE</small></div></div>
+          <div class="vpn-demo-receipt">✓ Telegram delivery · OWNER CONFIRMED</div>
+          <div class="vpn-demo-footer">STATIC DEMO · NO REAL CLIENT DATA · NO CONNECTION</div>
+        </div>
       </div>
     </section>
 
@@ -382,6 +405,6 @@ CPU 3% · RAM 27% · Disk 22%
       <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>Mini App 5.3.1 с Performance Intelligence и Infrastructure Digest 3.0 сохранены. 13 ноября инфраструктура VCC 5.4 получила дополнительный Smart Alerts Operational Watchdog с отдельным Cronitor heartbeat и fail-closed проверкой. Telegram Smart Alerts 2.0 включены как фоновая доставка; публичный showcase остаётся статическим демо.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>V5.3.1 / PERFORMANCE INTELLIGENCE</span><span>All dashboard figures shown are synthetic.</span></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>VCC 6.0 VPN DELIVERY / MINI APP V5.3.1</span><span>All dashboard figures shown are synthetic.</span></div></footer>
 </body>
 </html>
