@@ -312,3 +312,43 @@ h1 em,.closing em{font-style:normal;color:var(--orange)}
 .telegram-delivery-status .telegram-delivery-pending{font-size:10px;color:#f7a869;letter-spacing:.03em}
 @media(max-width:760px){.telegram-delivery-note{grid-template-columns:1fr;padding:22px;gap:20px}.telegram-delivery-status{border-left:0;border-top:1px solid #3b4557;padding:16px 0 0}.telegram-delivery-note h3{font-size:18px}}
 @media(max-width:390px){.telegram-delivery-note{padding:17px}.telegram-delivery-flow{gap:5px}.telegram-delivery-flow span{font-size:9px;padding:7px}}
+
+/* VCC 6.0: public, non-operational first-real-VPN-delivery milestone */
+.vpn-milestone{margin-top:28px;margin-bottom:40px;position:relative;overflow:hidden;border:1px solid rgba(158,110,198,.34);border-radius:25px;background:linear-gradient(125deg,rgba(28,33,47,.96),rgba(19,22,32,.98) 65%,rgba(32,23,42,.9));padding:40px}
+.vpn-milestone::before{content:"";position:absolute;right:-140px;top:-130px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(158,110,198,.17),transparent 70%);pointer-events:none}
+.vpn-milestone-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.09)}
+.vpn-milestone-label{font-size:10px;letter-spacing:.14em;font-weight:900;color:var(--orange)}
+.vpn-milestone-status{font-size:10px;letter-spacing:.07em;border:1px solid rgba(193,253,14,.3);color:var(--lime);background:rgba(193,253,14,.07);padding:7px 12px;border-radius:999px;font-weight:850}
+.vpn-milestone-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center;padding-top:35px;position:relative}
+.vpn-milestone h2{font-size:clamp(29px,3.2vw,44px);line-height:1.16;letter-spacing:-.052em;margin:0 0 20px}
+.vpn-milestone h2 span{color:var(--orange)}
+.vpn-milestone-lead{font-size:15px;line-height:1.8;color:#b9c2d1;margin:0 0 24px}
+.vpn-milestone-lead strong{color:var(--text)}
+.vpn-steps{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:22px}
+.vpn-steps span{padding:10px 12px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-weight:770;font-size:11px;color:#e1e5ee}
+.vpn-boundary{font-size:12px;line-height:1.7;color:#adb6c6;border-left:2px solid var(--purple);padding-left:14px;margin-bottom:24px}
+.vpn-boundary strong{color:#d8c0ed}
+.vpn-release-link{display:inline-flex;align-items:center;gap:12px;color:var(--lime);font-size:12px;font-weight:820;border-bottom:1px solid rgba(193,253,14,.4);padding-bottom:5px}
+.vpn-release-link:hover{color:#f3ffc7}
+.vpn-demo{border:1px solid #3c4257;border-radius:22px;background:linear-gradient(160deg,#242636,#171924 70%);box-shadow:0 30px 50px rgba(0,0,0,.28);padding:22px;min-width:0}
+.vpn-demo-header{display:flex;align-items:center;gap:11px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:18px;margin-bottom:24px}
+.vpn-demo-logo{width:38px;height:38px;border-radius:12px;background:var(--orange);color:#14161c;display:grid;place-items:center;font-size:21px;font-weight:900}
+.vpn-demo-header>span:nth-child(2){display:grid;line-height:1.25}
+.vpn-demo-header strong{font-size:13px}
+.vpn-demo-header small{font-size:9px;color:var(--muted);margin-top:4px}
+.vpn-demo-dot{margin-left:auto;height:8px;width:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 15px rgba(193,253,14,.35)}
+.vpn-demo-message{padding:13px 15px;border-radius:15px;font-size:12px;max-width:93%}
+.vpn-demo-user{background:linear-gradient(120deg,#7353a0,#8762ae);margin:0 0 13px auto;width:max-content;max-width:100%;font-weight:780}
+.vpn-demo-bot{display:grid;gap:5px;background:#303244;margin:0 auto 17px 0}
+.vpn-demo-bot strong{font-size:14px}
+.vpn-demo-bot small{font-size:11px;color:#bcc5d3}
+.vpn-demo-overline{font-weight:800;font-size:8px;letter-spacing:.13em;color:#dac6eb}
+.vpn-demo-files{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vpn-demo-files>div{min-width:0;display:grid;justify-items:start;gap:4px;padding:16px 12px;border:1px solid #49505e;background:#242b37;border-radius:13px}
+.vpn-demo-files span{font-size:25px;color:var(--orange);line-height:1.2}
+.vpn-demo-files strong{font-size:11px;overflow-wrap:anywhere}
+.vpn-demo-files small{font-size:8px;color:var(--muted);letter-spacing:.06em}
+.vpn-demo-receipt{font-size:10px;font-weight:850;color:var(--lime);margin:18px 0 10px}
+.vpn-demo-footer{font-size:8px;color:#a1a9bb;letter-spacing:.08em;padding-top:12px;border-top:1px solid #3a3f4c}
+@media(max-width:900px){.vpn-milestone-grid{grid-template-columns:1fr;gap:28px}.vpn-milestone{padding:28px}}
+@media(max-width:520px){.vpn-milestone{padding:20px;border-radius:17px}.vpn-demo{padding:14px}.vpn-steps{grid-template-columns:1fr 1fr}.vpn-milestone-lead{font-size:14px}.vpn-milestone-top{align-items:flex-start}}
