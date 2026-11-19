@@ -1,5 +1,17 @@
 # VPS Control Center — Public Showcase
 
+## NEW VCC 6.0 MILESTONE · 20.11.2026 — FIRST REAL VPN .CONF + QR DELIVERED 🎉
+
+**Genuine production capability, owner-confirmed:** a new AWG 3.1 peer was created on the private US server and the owner received a **real `.conf` plus branded Unonimous QR** via the private Telegram VPN Wizard. An interrupted encrypted US→NL delivery was recovered from the existing sealed result without creating a duplicate client. The previously tested dry-run, V3 Bridge, secure relay and owner-only Telegram workflow are distinct parts of this release.
+
+**What is NOT yet proven:** activating the profile on a device, real-site access through the tunnel, final post-delivery US/NL transaction reconciliation and restoration of legacy US polling. Revoke access in Telegram and a read-only VPN client-information view in the Mini App are **planned, not shipped**.
+
+**Showcase privacy:** the public website is a *static, synthetic illustration*, not a live VPN management interface. It does not create accounts, expose actual QR/.conf, reveal private identifiers or connect to the privileged VPN API. Historical VCC 5.x sections below are retained for chronology; older statements about VPN being discontinued have been superseded by this VCC 6.0 private Telegram milestone.
+
+[**VCC 6.0 public release story and exact acceptance limits**](VCC_60_FIRST_REAL_VPN_SHOWCASE_2026-11-20.md) · [**View the updated static site**](https://vps-monitor.koroleff.online/#vpn-access)
+
+---
+
 ## CURRENT SHOWCASE RELEASE · 13.11.2026 — VCC 5.4.10 TELEGRAM SMART ALERTS 2.0 ACTIVE
 
 **New production milestone:** Smart Alerts 2.0 Telegram delivery is enabled as a separate background job alongside the previously accepted Shadow → Operational Watchdog → Cronitor pipeline. The existing VCC bot accepted one controlled **synthetic test message** and the owner confirmed actual receipt. Delivery engine offline tests **9/9**, Telegram response validator **5/5**, first scheduled automatic job succeeded; **7/7** relevant timers active. At-most-one automatic send attempt: ambiguous/429/timeout outcomes remain reserved for manual investigation, not blindly retried.
