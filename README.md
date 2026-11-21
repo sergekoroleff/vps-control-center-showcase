@@ -10,6 +10,8 @@
 
 **Next acceptance gate:** the owner must receive both attachments automatically for the recovered existing client, then confirm successful VPN connection; after that, complete one new-client creation using only the Telegram bot, with the existing clients unaffected.
 
+- [VCC 6.1 engineering status and release acceptance checklist](docs/VCC_61_STATUS_2026-11-21.md)
+
 **Privacy:** this public showcase contains no live client profiles, QR contents, server addresses, secrets, production identifiers, or private source archives.
 
 ---
