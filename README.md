@@ -1,5 +1,19 @@
 # VPS Control Center — Public Showcase
 
+## VCC 6.1 STATUS · 21.11.2026 — AUTOMATIC VPN WIZARD IN DEVELOPMENT
+
+**What works:** VCC's Telegram VPN Wizard has genuinely delivered a functioning AmneziaWG client configuration (`.conf`) and branded QR to its owner. This is an already demonstrated private Telegram feature.
+
+**What is being built:** fully unattended, repeatable client provisioning initiated from Telegram; recoverable encrypted delivery across two servers; owner-only automated `.conf`/QR push; and verifiable end-to-end connection acceptance. **This is not yet a released or proven automatic feature.** A later client was created but its delivery was not confirmed; existing clients were preserved.
+
+**Engineering progress (21 Nov):** a client-side ACK response-field mismatch has been corrected in production source, diagnostic visibility was added to the encrypted-delivery route, and a recovery-first implementation plan was documented. These are **engineering milestones only**, not proof of production release. Do not infer that the background worker or automatic file push is live.
+
+**Next acceptance gate:** the owner must receive both attachments automatically for the recovered existing client, then confirm successful VPN connection; after that, complete one new-client creation using only the Telegram bot, with the existing clients unaffected.
+
+**Privacy:** this public showcase contains no live client profiles, QR contents, server addresses, secrets, production identifiers, or private source archives.
+
+---
+
 ## NEW VCC 6.0 MILESTONE · 20.11.2026 — FIRST REAL VPN .CONF + QR DELIVERED 🎉
 
 **Genuine production capability, owner-confirmed:** a new AWG 3.1 peer was created on the private US server and the owner received a **real `.conf` plus branded Unonimous QR** via the private Telegram VPN Wizard. An interrupted encrypted US→NL delivery was recovered from the existing sealed result without creating a duplicate client. The previously tested dry-run, V3 Bridge, secure relay and owner-only Telegram workflow are distinct parts of this release.
