@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0b0d13">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Koroleff VCC: персональный мониторинг инфраструктуры USA и Netherlands. Mini App, Cronitor, Smart Alerts и телеметрия. Управление VPN выполняется отдельно через Amnezia; публичный сайт — синтетическое демо.">
+  <meta name="description" content="Koroleff VCC: мониторинг USA и Netherlands и ANONPASS v1.3 — локальный Password, Passphrase, PIN и Codeword генератор в приватной Mini App. Публичный showcase — статическая иллюстрация, без секретов и live API.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://vps-monitor.koroleff.online/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Koroleff VCC">
   <meta property="og:title" content="Koroleff VCC · Infrastructure Monitoring · Two Hosts">
-  <meta property="og:description" content="VCC — приватный мониторинг двух серверов. Выдача VPN-доступов перенесена в Amnezia. Исторический прототип VPN Wizard показан отдельно, как архив проекта. Демо использует синтетические данные.">
+  <meta property="og:description" content="Monitoring-only VCC + ANONPASS v1.3: Password, Passphrase, PIN и Codeword. Локальная генерация в Telegram Mini App, статическое публичное демо без реальных секретов и телеметрии.">
   <meta property="og:url" content="https://vps-monitor.koroleff.online/">
-  <title>Koroleff VCC · Monitoring Only · USA &amp; Netherlands</title>
+  <title>Koroleff VCC · Monitoring + ANONPASS 1.3 · Security Utilities</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="showcase-v5.css">
   <script src="showcase-v5.js" defer></script>
@@ -29,6 +29,7 @@
       <nav class="site-nav" aria-label="Разделы сайта">
         <a href="#capabilities">Возможности</a>
         <a href="#experience">Mini App</a>
+        <a href="#anonpass">ANONPASS</a>
         <a href="#telegram">Telegram Bot</a>
         <a href="#vpn-access">VPN · архив</a>
         <a href="#external">Cronitor</a>
@@ -54,7 +55,7 @@
         <div class="hero-foot">
           <span>PRIVATE BY DESIGN</span><span class="separator-dot" aria-hidden="true"></span>
           <span>TELEGRAM NATIVE</span><span class="separator-dot" aria-hidden="true"></span>
-          <span>MONITORING ONLY</span>
+          <span>MONITORING ONLY + LOCAL SECURITY UTILITIES</span>
         </div>
       </div>
 
@@ -79,7 +80,7 @@
               <div class="mini-stats"><div><span>CPU</span><strong>3%</strong></div><div><span>RAM</span><strong>27%</strong></div><div><span>Disk</span><strong>22%</strong></div><div><span>Load</span><strong>0.08</strong></div></div>
             </article>
           </div>
-          <div class="app-bottom-nav"><span class="selected">◈ &nbsp;Dashboard</span><span>US</span><span>NL</span></div>
+          <div class="app-bottom-nav"><span class="selected">◈ &nbsp;Dashboard</span><span>US</span><span>NL</span><span>⌘ ANONPASS</span></div>
         </div>
         <div class="floating-note floating-note-a"><span class="note-symbol">↗</span><div><strong>Two independent hosts</strong><small>No misleading combined health</small></div></div>
         <div class="floating-note floating-note-b"><span class="note-symbol lilac">▥</span><div><strong>24-hour history</strong><small>Trends with data-quality labels</small></div></div>
@@ -89,7 +90,7 @@
     <section class="signal-strip" aria-label="Ключевые характеристики">
       <div class="wrap signal-grid">
         <div><strong>02</strong><span>независимых сервера</span></div>
-        <div><strong>03</strong><span>экрана Mini App</span></div>
+        <div><strong>04</strong><span>вкладки Mini App</span></div>
         <div><strong>24<span>H</span></strong><span>история US + NL</span></div>
         <div><strong>01</strong><span>защищённая панель</span></div>
       </div>
@@ -101,7 +102,7 @@
         <article class="feature-card feature-wide"><div class="feature-icon">◈</div><span class="feature-id">01</span><h3>Unified Dashboard</h3><p>Текущая картина US/NL: ресурсы, сервисы, Cronitor и <strong>Infrastructure Insights</strong>; новый Performance Intelligence даёт выбор хоста и периода, графики CPU/RAM и выборочные P95/Peak без выдуманного uptime.</p><span class="feature-tail">USA + NETHERLANDS</span></article>
         <article class="feature-card"><div class="feature-icon purple">⌁</div><span class="feature-id">02</span><h3>Performance history</h3><p>Интерактивные графики CPU/RAM на Dashboard: для US 1/6/24 часа, для NL 6/24 часа, P95, Peak и качество выборки. Дополнительные показатели US (swap, PSI, OOM) доступны на вкладке сервера.</p><span class="feature-tail">24-HOUR WINDOW</span></article>
         <article class="feature-card"><div class="feature-icon lime">◷</div><span class="feature-id">03</span><h3>Service reliability</h3><p>Для US — история наблюдаемых состояний Finance-сервисов и таймеров; для NL — пять почасовых шкал сервисов с отображением смешанных состояний и пропусков. Наблюдения не равны SLA uptime.</p><span class="feature-tail">QUALITY AWARE</span></article>
-        <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API. Техническая телеметрия отделена от пользовательских финансовых данных.</p><span class="feature-tail">ACCESS CONTROL</span></article>
+        <article class="feature-card"><div class="feature-icon">▤</div><span class="feature-id">04</span><h3>Protected Mini App</h3><p>Авторизация через Telegram и ограниченный read-only API для мониторинга. Отдельно ANONPASS создаёт случайные секреты в браузере, без передачи их в API.</p><span class="feature-tail">ACCESS CONTROL + CLIENT-ONLY TOOLS</span></article>
       </div>
     </section>
 
@@ -129,13 +130,14 @@
 
     <section class="section demo-section" id="experience" aria-labelledby="experience-title">
       <div class="wrap">
-        <div class="section-head"><div><p class="eyebrow">02 / PRODUCT EXPERIENCE</p><h2 id="experience-title">Три экрана<br><span>Один язык данных</span></h2></div><p>Иллюстрация принятого V5.3.1. Все числа синтетические и намеренно не подключены к настоящим серверам; выбор реального интервала доступен в защищённой Mini App.</p></div>
+        <div class="section-head"><div><p class="eyebrow">02 / PRODUCT EXPERIENCE</p><h2 id="experience-title">Четыре вкладки<br><span>Один удобный центр</span></h2></div><p>Dashboard, USA и Netherlands остаются read-only мониторингом. Четвёртая вкладка ANONPASS v1.3 добавляет локальные генераторы. Все цифры и примеры на этой странице иллюстративны, публичный сайт не подключён к VPS.</p></div>
         <div class="demo-shell">
           <div class="demo-topline"><div><span class="demo-mark">K</span><span class="demo-brand"><small>KOROLEFF CONTROL CENTER</small><strong>Infrastructure Intelligence</strong></span></div><span class="demo-badge">STATIC DEMO · NOT LIVE</span></div>
           <div class="demo-tabs" role="tablist" aria-label="Демонстрационные разделы Mini App">
             <button id="tab-dashboard" role="tab" aria-selected="true" aria-controls="panel-dashboard" tabindex="0" data-tab="dashboard"><span aria-hidden="true">◈</span> Dashboard</button>
             <button id="tab-us" role="tab" aria-selected="false" aria-controls="panel-us" tabindex="-1" data-tab="us"><img src="assets/flags/us.svg" width="22" height="15" alt=""> USA</button>
             <button id="tab-nl" role="tab" aria-selected="false" aria-controls="panel-nl" tabindex="-1" data-tab="nl"><img src="assets/flags/nl.svg" width="22" height="15" alt=""> Netherlands</button>
+            <button id="tab-anonpass" role="tab" aria-selected="false" aria-controls="panel-anonpass" tabindex="-1" data-tab="anonpass"><span aria-hidden="true">⌘</span> ANONPASS</button>
           </div>
 
           <section id="panel-dashboard" class="demo-panel" role="tabpanel" aria-labelledby="tab-dashboard" tabindex="0">
@@ -212,12 +214,96 @@
             </div>
             <p class="note-line">External Health · Cronitor: <strong>HEALTHY · DEMO</strong>. Anon memory: доступны не все серии. Пропущенные измерения помечаются <strong>NO_DATA</strong>.</p>
           </section>
+
+          <section id="panel-anonpass" class="demo-panel" role="tabpanel" aria-labelledby="tab-anonpass" tabindex="0" hidden>
+            <div class="demo-heading">
+              <div><p class="app-kicker">SECURE UTILITIES / ANONPASS 1.3</p><h3>ANONPASS</h3><p>Private password lab · generated on your device</p></div>
+              <span class="quality-tag">STATIC UI PREVIEW</span>
+            </div>
+            <div class="ap-mini-preview" aria-label="Макет четырёх режимов ANONPASS без настоящей генерации">
+              <div><span aria-hidden="true">⌘</span><strong>SECURE UTILITIES</strong><small>CLIENT-SIDE · WEB CRYPTO</small></div>
+              <div class="ap-mini-modes"><span>Password</span><span>Passphrase</span><span>PIN</span><span>Codeword</span></div>
+              <p>Уникальные пароли, случайные фразы, цифровые PIN и одноразовые кодовые обозначения. Секреты создаются в приватной Mini App и очищаются при смене вкладки.</p>
+              <a href="#anonpass" class="text-link">Посмотреть ANONPASS 1.3 подробнее <span aria-hidden="true">↗</span></a>
+              <small>PUBLIC PREVIEW · NO REAL PASSWORDS OR GENERATION</small>
+            </div>
+          </section>
         </div>
         <p class="demo-disclaimer"><strong>DEMO ONLY.</strong> Это автономная статическая демонстрация дизайна и структуры данных. На публичной странице нет live API, реальных ресурсов, финансовой информации и авторизованных Telegram-сессий.</p>
       </div>
     </section>
 
 
+
+    <section class="section anonpass-section" id="anonpass" aria-labelledby="anonpass-title">
+      <div class="wrap">
+        <div class="anonpass-intro">
+          <div>
+            <p class="eyebrow"><span aria-hidden="true">⌘</span> NEW RELEASE / SECURITY UTILITIES / 22.11.2026</p>
+            <h2 id="anonpass-title">ANONPASS <em>1.3</em><br><span>Случайность под контролем</span></h2>
+            <p class="anonpass-lead">Четыре генератора внутри защищённой Telegram Mini App. Пароли, парольные фразы, PIN и кодовые слова формируются локально с использованием Web Crypto. Настоящий секрет не отправляется на сервер, не сохраняется в базе и очищается при выходе из вкладки.</p>
+            <div class="anonpass-tags" aria-label="Ключевые характеристики"><span>WEB CRYPTO</span><span>EFF · 7 776 WORDS</span><span>NO SECRET API</span><span>OWNER TESTED</span></div>
+          </div>
+          <div class="anonpass-release" aria-label="Подтверждение релиза ANONPASS 1.3">
+            <div class="anonpass-release-mark" aria-hidden="true">⌘</div>
+            <span class="anonpass-release-eyebrow">PRODUCTION ACCEPTANCE</span>
+            <strong>6 / 6 <small>PASS</small></strong>
+            <p>Сверка NL, HTTP-ресурсов и исходников GitHub по SHA256. Все четыре набора CI-тестов прошли.</p>
+            <span class="anonpass-release-foot">GITHUB → CI → NL → QA → SHA256</span>
+          </div>
+        </div>
+
+        <div class="anonpass-showcase-grid">
+          <div class="anonpass-demo" aria-label="Интерактивное переключение иллюстраций ANONPASS. Генерация на публичной странице отключена.">
+            <div class="anonpass-demo-top"><span class="anonpass-demo-monogram" aria-hidden="true">⌘</span><div><strong>ANONPASS</strong><small>SECURE UTILITIES · SHOWCASE</small></div><span class="anonpass-demo-flag">ILLUSTRATION ONLY</span></div>
+            <div class="anonpass-tabs" role="tablist" aria-label="Режимы ANONPASS · иллюстрации">
+              <button id="ap-show-tab-password" role="tab" data-anonpass-mode="password" aria-controls="ap-show-panel-password" aria-selected="true" tabindex="0">Password</button>
+              <button id="ap-show-tab-passphrase" role="tab" data-anonpass-mode="passphrase" aria-controls="ap-show-panel-passphrase" aria-selected="false" tabindex="-1">Passphrase</button>
+              <button id="ap-show-tab-pin" role="tab" data-anonpass-mode="pin" aria-controls="ap-show-panel-pin" aria-selected="false" tabindex="-1">PIN</button>
+              <button id="ap-show-tab-codeword" role="tab" data-anonpass-mode="codeword" aria-controls="ap-show-panel-codeword" aria-selected="false" tabindex="-1">Codeword</button>
+            </div>
+            <div id="ap-show-panel-password" class="anonpass-mode-panel" role="tabpanel" aria-labelledby="ap-show-tab-password" tabindex="0">
+              <span class="anonpass-mode-kicker">01 / PASSWORD GENERATOR</span>
+              <div class="anonpass-sample" aria-label="Только демонстрационные символы, не пароль">•••• •••• •••• •••• •••• ••••</div>
+              <p class="anonpass-mode-explain">12–64 символа · настройка алфавитов и исключение похожих знаков · криптографически случайная генерация.</p>
+              <div class="anonpass-mode-traits"><span>LOCAL ONLY</span><span>SHOW / HIDE</span><span>DECORATIVE SCRAMBLE</span></div>
+            </div>
+            <div id="ap-show-panel-passphrase" class="anonpass-mode-panel" role="tabpanel" aria-labelledby="ap-show-tab-passphrase" tabindex="0" hidden>
+              <span class="anonpass-mode-kicker">02 / PASSPHRASE GENERATOR</span>
+              <div class="anonpass-sample words">WORD · WORD · WORD · WORD · WORD · WORD</div>
+              <p class="anonpass-mode-explain">4–8 независимых слов из EFF Large Wordlist · по умолчанию шесть, ≈77,5 бита энтропии · слова формируются в эффектной 3-секундной анимации.</p>
+              <div class="anonpass-mode-traits"><span>7 776 WORDS</span><span>3 SEC SCRAMBLE</span><span>WEB CRYPTO</span></div>
+            </div>
+            <div id="ap-show-panel-pin" class="anonpass-mode-panel" role="tabpanel" aria-labelledby="ap-show-tab-pin" tabindex="0" hidden>
+              <span class="anonpass-mode-kicker">03 / PIN GENERATOR</span>
+              <div class="anonpass-sample pin" aria-label="Иллюстрация шести цифр, а не настоящий PIN">● ● ● ● ● ●</div>
+              <p class="anonpass-mode-explain">PIN из 4, 6 или 8 цифр. Начальные нули сохраняются. Подходит для устройств и сценариев с ограничением попыток, но не для неограниченного перебора.</p>
+              <div class="anonpass-mode-traits"><span>4 / 6 / 8 DIGITS</span><span>LEADING ZEROES</span><span>LOCAL ONLY</span></div>
+            </div>
+            <div id="ap-show-panel-codeword" class="anonpass-mode-panel" role="tabpanel" aria-labelledby="ap-show-tab-codeword" tabindex="0" hidden>
+              <span class="anonpass-mode-kicker">04 / CODEWORD GENERATOR</span>
+              <div class="anonpass-sample word">[ RANDOM WORD ]</div>
+              <p class="anonpass-mode-explain">Одно случайное слово EFF для названия, условного обозначения или некритичного устного сценария. ≈12,9 бита — не замена паролю или OTP.</p>
+              <div class="anonpass-mode-traits"><span>EFF WORDLIST</span><span>SHORT SCRAMBLE</span><span>NOT A PASSWORD</span></div>
+            </div>
+            <div class="anonpass-demo-bottom"><span>DEMO PREVIEW · НЕ СОЗДАЁТ ПАРОЛИ</span><span class="anonpass-demo-lock" aria-hidden="true">◈ NO INPUT / NO API</span></div>
+          </div>
+
+          <div class="anonpass-capabilities">
+            <article class="anonpass-capability"><span class="anonpass-capability-num">01</span><div><h3>Crypto first</h3><p>Браузерный Web Crypto, выбор без статистического смещения (rejection sampling), никаких Math.random или слабого запасного генератора.</p></div></article>
+            <article class="anonpass-capability"><span class="anonpass-capability-num">02</span><div><h3>Private by design</h3><p>Секрет не уходит в API и не хранится в логах или аналитике. Исходный словарь EFF загружается как публичный статический ресурс с проверкой SHA256.</p></div></article>
+            <article class="anonpass-capability"><span class="anonpass-capability-num">03</span><div><h3>Animation with discipline</h3><p>Хаотичные декоративные буквы постепенно превращаются в слова. Настоящий секрет создаётся только в конце эффекта; смена вкладки отменяет генерацию и очищает результат.</p></div></article>
+            <article class="anonpass-capability"><span class="anonpass-capability-num">04</span><div><h3>Release engineering</h3><p>Релиз из проверенного коммита GitHub, автоматические тесты, безопасная установка с backup/rollback, тест владельца и итоговый SHA256-контроль 6/6.</p></div></article>
+          </div>
+        </div>
+        <div class="anonpass-summary">
+          <div><strong>v1.1</strong><span>Password · local Web Crypto</span></div>
+          <div><strong>v1.2</strong><span>EFF Passphrase · 3 sec animation</span></div>
+          <div><strong>v1.3</strong><span>PIN + Codeword · accepted</span></div>
+        </div>
+        <p class="anonpass-disclaimer"><strong>PUBLIC SHOWCASE:</strong> переключатели выше показывают заранее написанные примеры интерфейса; они <strong>не генерируют, не копируют и не принимают секреты</strong>. Реальные генераторы доступны только внутри приватной Mini App. Одно кодовое слово и короткий PIN без ограничений попыток не подходят для защиты чувствительных аккаунтов. Устройство и его буфер обмена остаются отдельными факторами безопасности. <a href="ANONPASS_V13_SHOWCASE_2026-11-22.md">Читать release story <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
 
     <section class="section external-section" id="external" aria-labelledby="external-title">
       <div class="wrap">
@@ -402,9 +488,9 @@ CPU 3% · RAM 27% · Disk 22%
     </section>
 
     <section class="closing wrap" aria-labelledby="closing-title">
-      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>Mini App 5.3.1 с Performance Intelligence и Infrastructure Digest 3.0 сохранены. 13 ноября инфраструктура VCC 5.4 получила дополнительный Smart Alerts Operational Watchdog с отдельным Cronitor heartbeat и fail-closed проверкой. Telegram Smart Alerts 2.0 включены как фоновая доставка; публичный showcase остаётся статическим демо.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
+      <div class="closing-inner"><div><p class="eyebrow">THE NEXT ITERATION</p><h2 id="closing-title">Сначала ясность<br><em>Потом автоматизация</em></h2><p>ANONPASS v1.3 принят в production: Password, Passphrase, PIN и Codeword формируются локально, а релиз подтверждён сверкой шести файлов NL и GitHub. Mini App 5.3.1 с Performance Intelligence и Infrastructure Digest 3.0 сохранены. 13 ноября инфраструктура VCC 5.4 получила дополнительный Smart Alerts Operational Watchdog с отдельным Cronitor heartbeat и fail-closed проверкой. Telegram Smart Alerts 2.0 включены как фоновая доставка; публичный showcase остаётся статическим демо.</p></div><a class="btn btn-outline" href="#top">Наверх <span aria-hidden="true">↑</span></a></div>
     </section>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>VCC · MONITORING ONLY / MINI APP V5.3.1</span><span>All dashboard figures shown are synthetic.</span></div></footer>
+  <footer class="footer"><div class="wrap footer-inner"><span>© 2026 KOROLEFF · INDEPENDENT PERSONAL PROJECT</span><span>VCC · MONITORING + ANONPASS 1.3</span><span>All dashboard figures shown are synthetic.</span></div></footer>
 </body>
 </html>
