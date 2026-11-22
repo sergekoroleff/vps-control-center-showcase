@@ -1,0 +1,36 @@
+name: ANONPASS showcase security and accessibility
+
+on:
+  push:
+    branches:
+      - main
+      - feature/showcase-anonpass-v13-2026-11-22
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-public-showcase:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: JavaScript syntax
+        run: node --check showcase-v5.js
+      - name: Static preview security, design, tabs and keyboard regression
+        run: node --test tests/anonpass-showcase.test.cjs
+      - name: No private ANONPASS source or live telemetry shipped to public Pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f .nojekyll
+          test "$(cat CNAME)" = "vps-monitor.koroleff.online"
+          if grep -nE 'getRandomValues\(|navigator\.clipboard|XMLHttpRequest|fetch\(' showcase-v5.js; then
+            echo 'STOP: public preview must remain non-generating and network-free'
+            exit 1
+          fi
+          echo 'PUBLIC_SHOWCASE_STATIC_BOUNDARY: PASS'
