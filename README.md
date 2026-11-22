@@ -1,6 +1,18 @@
 # VPS Control Center — Public Showcase
 
-## VCC 6.1 STATUS · 21.11.2026 — AUTOMATIC VPN WIZARD IN DEVELOPMENT
+## CURRENT PROJECT SCOPE · 22.11.2026 — MONITORING ONLY
+
+**VCC is now a read-only infrastructure monitoring tool** for the USA and Netherlands servers, with a private Telegram bot, Mini App, external health signals (Cronitor), history and Smart Alerts.
+
+**VPN management is deliberately outside VCC.** New AmneziaWG clients and access changes are handled in the **Amnezia app**, not via Telegram-bot buttons or an automatic VCC VPN Wizard. The bot's VPN-management entry points were removed from the running menu. No restart of the old provisioning workflow is planned.
+
+The VCC 6.0/6.1 items below are retained strictly as **historical engineering milestones**. They record genuine proof-of-concept delivery, but the proposed unattended Telegram provisioning was **discontinued**, not released. A subsequent real mobile VPN connection was owner-tested successfully; the active VPN is maintained independently of VCC.
+
+**Source reconciliation:** verified NL/US source snapshots are under private-review branch `sync/production-2026-11-22` in `vps-control-center` and draft PR #23. **This public showcase is static, uses synthetic data and does not access the private source or servers.** Neither private PR nor source snapshot is a verified deployable production release.
+
+---
+
+## ARCHIVE · VCC 6.1 STATUS · 21.11.2026 — AUTOMATIC VPN WIZARD IN DEVELOPMENT
 
 **What works:** VCC's Telegram VPN Wizard has genuinely delivered a functioning AmneziaWG client configuration (`.conf`) and branded QR to its owner. This is an already demonstrated private Telegram feature.
 
@@ -22,7 +34,7 @@
 
 **What is NOT yet proven:** activating the profile on a device, real-site access through the tunnel, final post-delivery US/NL transaction reconciliation and restoration of legacy US polling. Revoke access in Telegram and a read-only VPN client-information view in the Mini App are **planned, not shipped**.
 
-**Showcase privacy:** the public website is a *static, synthetic illustration*, not a live VPN management interface. It does not create accounts, expose actual QR/.conf, reveal private identifiers or connect to the privileged VPN API. Historical VCC 5.x sections below are retained for chronology; older statements about VPN being discontinued have been superseded by this VCC 6.0 private Telegram milestone.
+**Showcase privacy:** the public website is a *static, synthetic illustration*, not a live VPN management interface. It does not create accounts, expose actual QR/.conf, reveal private identifiers or connect to the privileged VPN API. Historical sections below are retained for chronology. This was the 20 November experimental milestone; the 22 November decision supersedes it: VPN provisioning now belongs to Amnezia and VCC is monitoring-only.
 
 [**VCC 6.0 public release story and exact acceptance limits**](VCC_60_FIRST_REAL_VPN_SHOWCASE_2026-11-20.md) · [**View the updated static site**](https://vps-monitor.koroleff.online/#vpn-access)
 
