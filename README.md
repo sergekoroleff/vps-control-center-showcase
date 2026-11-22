@@ -12,6 +12,24 @@ The VCC 6.0/6.1 items below are retained strictly as **historical engineering mi
 
 ---
 
+## ANONPASS 1.3 · SECURITY UTILITIES · RELEASED 22.11.2026
+
+**ANONPASS is now a fourth tab in the private VCC Mini App**, alongside Dashboard / USA / Netherlands. This is the practical security toolkit: **Password (v1.1), Passphrase (v1.2), PIN 4/6/8 and Codeword (v1.3)**.
+
+- **Password:** 12–64 cryptographically generated characters, character-set options and ambiguity exclusion.
+- **Passphrase:** EFF 7,776-word dictionary, 4–8 independent words (default six), configurable punctuation/capitalization, **three-second** decorative letter-to-word animation.
+- **PIN:** 4, 6 or 8 random digits; leading zeroes preserved. Intended for systems with attempt limiting, not offline high-value authentication.
+- **Codeword:** one randomly selected EFF word, approximately 12.9 bits, for non-critical call-signs/labels. Not a password, banking OTP or recovery phrase.
+- **Privacy:** actual secrets are generated locally in the browser using Web Crypto after the animation, not sent to an API or stored by VCC. Public EFF dictionary is fetched from same-origin static route and hash-checked before use. Generated results are cleared when leaving ANONPASS; the OS clipboard is outside the app's control.
+
+**User acceptance and release parity:** owner-confirmed PIN/Codeword, Password/Passphrase and clear-on-tab behavior on a real device. GitHub release artifact → NL file SHA256 → HTTP assets returned `ANONPASS13_SERVER_GITHUB_PARITY: PASS (6/6)`. The production source was merged through reviewed **PR #28** at `9d65ad96dfc44b1cacaa2b4d004cd84781dad7ab`; all six Git blobs matched the tested candidate after merge. GitHub CI PASS.
+
+**Scope of the proof:** only **six ANONPASS files**, not full US/NL infrastructure or reproducibility. The public showcase uses a static illustrative four-mode preview with *no real password generation, secret copying or network calls*. It does not expose private Mini App endpoints, user data or production secrets.
+
+[View the dedicated showcase section](https://vps-monitor.koroleff.online/#anonpass) · [Read the release story](ANONPASS_V13_SHOWCASE_2026-11-22.md)
+
+---
+
 ## ARCHIVE · VCC 6.1 STATUS · 21.11.2026 — AUTOMATIC VPN WIZARD IN DEVELOPMENT
 
 **What works:** VCC's Telegram VPN Wizard has genuinely delivered a functioning AmneziaWG client configuration (`.conf`) and branded QR to its owner. This is an already demonstrated private Telegram feature.
