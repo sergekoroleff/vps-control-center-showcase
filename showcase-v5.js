@@ -3,7 +3,7 @@
   "use strict";
   const tabs = [...document.querySelectorAll('[role="tab"][data-tab]')];
   const panels = new Map([...document.querySelectorAll('[role="tabpanel"]')].map(p => [p.id, p]));
-  const valid = new Set(["dashboard", "us", "nl"]);
+  const valid = new Set(["dashboard", "us", "nl", "anonpass"]);
 
   function activate(key, moveFocus = false) {
     if (!valid.has(key)) return;
@@ -33,4 +33,36 @@
   }
 
   activate("dashboard");
+
+  // ANONPASS showcase is intentionally STATIC: it switches only prewritten,
+  // synthetic explanations. It never generates, receives, stores, transmits,
+  // logs or copies secrets and never contacts the production Mini App API.
+  const anonTabs = [...document.querySelectorAll('[role="tab"][data-anonpass-mode]')];
+  const anonModes = new Set(["password", "passphrase", "pin", "codeword"]);
+  function activateAnonMode(mode, moveFocus = false) {
+    if (!anonModes.has(mode)) return;
+    for (const tab of anonTabs) {
+      const selected = tab.dataset.anonpassMode === mode;
+      const panel = document.getElementById(tab.getAttribute("aria-controls"));
+      if (!panel) continue;
+      tab.setAttribute("aria-selected", selected ? "true" : "false");
+      tab.tabIndex = selected ? 0 : -1;
+      panel.hidden = !selected;
+      if (selected && moveFocus) tab.focus();
+    }
+  }
+  for (const [index, tab] of anonTabs.entries()) {
+    tab.addEventListener("click", () => activateAnonMode(tab.dataset.anonpassMode));
+    tab.addEventListener("keydown", event => {
+      let next;
+      if (event.key === "ArrowRight") next = anonTabs[(index + 1) % anonTabs.length];
+      else if (event.key === "ArrowLeft") next = anonTabs[(index + anonTabs.length - 1) % anonTabs.length];
+      else if (event.key === "Home") next = anonTabs[0];
+      else if (event.key === "End") next = anonTabs[anonTabs.length - 1];
+      else return;
+      event.preventDefault();
+      activateAnonMode(next.dataset.anonpassMode, true);
+    });
+  }
+  activateAnonMode("password");
 })();
